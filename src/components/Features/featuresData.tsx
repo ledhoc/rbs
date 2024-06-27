@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Feature } from "@/types/feature";
 
 const featuresData: Feature[] = [
