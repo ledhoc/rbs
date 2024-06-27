@@ -8,13 +8,13 @@ const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28 bg-gray-100 dark:bg-gray-dark">
+    <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28 bg-gray-100 dark:bg-gray-dark lg:px-20">
       <div className="container">
         <SectionTitle
           title="Build a Team"
           paragraph="RB offers comprehensive team-building packages designed to meet your specific project needs. Our packages provide tailored solutions to help you assemble and maintain a highly skilled IT team. Choose from our four packages"
           center
-          width="680px"
+          width="700px"
         />
         {/* <div className="w-full">
           <div className="mb-8 flex justify-center md:mb-12 lg:mb-16">
@@ -60,7 +60,7 @@ const Pricing = () => {
           <PricingBox
             packageName="Basic"
           >
-            <p className="m-1 text-base font-bold text-body-color">R Confirmation</p>
+            <p className="m-1 text-base font-bold text-body-color">Requirement Confirmation</p>
             <OfferList text="Confirm project requirements and HR targets" status="active" />
             <OfferList text="Consult on suitable solutions and technologies based on project demands" status="active" />
             <OfferList text="Suggest personnel with appropriate skills" status="active" />
