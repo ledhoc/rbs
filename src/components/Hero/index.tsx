@@ -3,6 +3,7 @@ import HeroBackground from "./Background";
 import Image from "next/image";
 import ArrowCurve from "public/svgs/arrow-curve.svg";
 import ArrowRight from "public/svgs/arrow_right.svg";
+import ContactButton from "@/components/Button/ContactButton";
 
 const Hero = () => {
   return (
@@ -15,36 +16,20 @@ const Hero = () => {
           <div className="-mx-4 flex">
             <div className="flex w-full flex-row px-4">
               <div className="w-1/2 flex-col">
-                <h1 className="text-3xl font-bold leading-tight text-black sm:text-4xl sm:leading-tight md:text-6xl md:leading-tight">
+                <h1 className="text-3xl font-bold leading-tight text-gray-light sm:text-4xl sm:leading-tight md:text-6xl md:leading-tight">
                   Build & Run your
                 </h1>
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-primary sm:text-4xl sm:leading-tight md:text-6xl md:leading-tight">
                   IT Dream Team
                 </h1>
-                <p className="max-w-[550px] text-justify">
+                <p className="max-w-[550px] text-justify text-gray-light">
                   Our comprehensive solution provides you with everything you
                   need to build your dream IT team, from identifying your
                   specific staffing needs to recruiting, assessing, training,
                   and retaining top talent.
                 </p>
                 <div className="mt-[50px]">
-                  <div className="flex space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                    <Link
-                      href="#"
-                      className="rounded-xl  bg-primary px-8 py-3 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/65"
-                    >
-                      <div className="flex flex-row">
-                        <p>Contact Us</p>
-                        <Image
-                          src="/svgs/arrow-right.svg"
-                          alt="arrow-right"
-                          width={17}
-                          height={13}
-                          className="ml-3"
-                        />
-                      </div>
-                    </Link>
-                  </div>
+                  <ContactButton />
                   <div className="ml-[-75px] mt-[-122px]">
                     <Image
                       src="/svgs/arrow-curve.svg"

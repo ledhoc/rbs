@@ -1,4 +1,7 @@
+import ListItem from "@/components/About/ListItem";
+import ContactButton from "@/components/Button/ContactButton";
 import Image from "next/image";
+import { text } from "stream/consumers";
 
 const list = [
   "Need to build an IT team to meet your business development needs?",
@@ -27,10 +30,18 @@ const AboutSectionTwo = () => {
           <div className="w-full max-w-[860px] lg:w-2/3">
             <h3 className="flex flex-wrap text-[50px]">
               Looking to hire&nbsp;
-              <h3 className="text-primary">top IT&nbsp;</h3>
+              <p className="text-primary">top IT&nbsp;</p>
               engineers &#13;for&nbsp;
-              <h3 className="text-primary">your project</h3>?
+              <p className="text-primary">your project</p>?
             </h3>
+            <div className="mt-3 flex flex-col">
+              {list.map((text, index) => (
+                <ListItem key={`${index}`} text={text} />
+              ))}
+            </div>
+            <div className="mt-9">
+              <ContactButton />
+            </div>
           </div>
         </div>
       </div>

@@ -3,6 +3,23 @@ import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
+import Dot from "@/components/Icons/Dot";
+
+interface TextItemProps {
+  text: string;
+}
+const TextItem = ({ text }: TextItemProps) => {
+  return (
+    <div className="flex">
+      <div className="mt-2">
+        <Dot color={"#000000"} />
+      </div>
+      <div className="ml-3 text-gray-light">
+        <span className="text-justify text-xs">{text}</span>
+      </div>
+    </div>
+  );
+};
 
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
@@ -11,91 +28,125 @@ const Pricing = () => {
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Simple and Affordable Pricing"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="CHOOSE YOUR PACKAGE"
+          paragraph="RB offers comprehensive team-building packages designed to meet your specific project needs. Our packages provide tailored solutions to help you assemble and maintain a highly skilled IT team. Choose from our four packages:"
           center
-          width="665px"
+          width="800px"
         />
 
-        <div className="w-full">
-          <div className="mb-8 flex justify-center md:mb-12 lg:mb-16">
-            <span
-              onClick={() => setIsMonthly(true)}
-              className={`${
-                isMonthly
-                  ? "pointer-events-none text-primary"
-                  : "text-dark dark:text-white"
-              } mr-4 cursor-pointer text-base font-semibold`}
-            >
-              Monthly
-            </span>
-            <div
-              onClick={() => setIsMonthly(!isMonthly)}
-              className="flex cursor-pointer items-center"
-            >
-              <div className="relative">
-                <div className="h-5 w-14 rounded-full bg-[#1D2144] shadow-inner"></div>
-                <div
-                  className={`${
-                    isMonthly ? "" : "translate-x-full"
-                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
-                >
-                  <span className="active h-4 w-4 rounded-full bg-white"></span>
-                </div>
-              </div>
-            </div>
-            <span
-              onClick={() => setIsMonthly(false)}
-              className={`${
-                isMonthly
-                  ? "text-dark dark:text-white"
-                  : "pointer-events-none text-primary"
-              } ml-4 cursor-pointer text-base font-semibold`}
-            >
-              Yearly
-            </span>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "40" : "120"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
-          </PricingBox>
+        <div className="grid grid-cols-1 gap-x-4 gap-y-10 md:grid-cols-2 lg:grid-cols-4">
           <PricingBox
             packageName="Basic"
-            price={isMonthly ? "399" : "789"}
+            price={isMonthly ? "40" : "120"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle=""
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <div className="flex flex-col">
+              <p className="text-sm font-semibold">Requirement Confirmation</p>
+              <TextItem text={"Confirm project requirements and HR targets"} />
+              <TextItem
+                text={
+                  "Consult on suitable solutions and technologies based on project demands"
+                }
+              />
+              <TextItem text={"Suggest personnel with appropriate skills"} />
+              <p className="mt-3 text-sm font-semibold">HR Consultation</p>
+              <TextItem text={"Advise on wages and benefits"} />
+              <TextItem
+                text={
+                  "Recommend the skills, levels, and quantity of candidates required for the team"
+                }
+              />
+              <TextItem
+                text={
+                  "Consult on training fees and backup personnel preparation"
+                }
+              />
+              <p className="mt-3 text-sm font-semibold">{"Recruitment"}</p>
+              <TextItem text={"Develop a recruitment plan based on budget"} />
+              <TextItem
+                text={"Prepare CV data and set up interview schedules"}
+              />
+            </div>
           </PricingBox>
           <PricingBox
-            packageName="Plus"
+            packageName="Standard"
+            price={isMonthly ? "399" : "789"}
+            duration={isMonthly ? "mo" : "yr"}
+            subtitle=""
+          >
+            <p className="mb-3 text-xs">
+              Includes all services from the Basic Package, plus
+            </p>
+            <p className="text-sm font-semibold">Technical Consulting</p>
+            <TextItem
+              text={
+                "Support in resolving technical issues during project deployment"
+              }
+            />
+            <TextItem
+              text={
+                "Address technical challenges and changes due to business plan adjustments"
+              }
+            />
+            <p className="mt-3 text-sm font-semibold">Operational Processing</p>
+            <TextItem
+              text={
+                "Consult on basic operational processes for back office, project development, and recruitment departments"
+              }
+            />
+          </PricingBox>
+          <PricingBox
+            packageName="Premium"
             price={isMonthly ? "589" : "999"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle=""
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <p className="mb-3 text-xs">
+              Includes all services from the Standard Package, plus
+            </p>
+            <p className="text-sm font-semibold">Working Culture</p>
+            <TextItem
+              text={
+                "Consult on activities to build and maintain a positive working culture for the team/company"
+              }
+            />
+            <TextItem
+              text={
+                "Collaborate with culture experts to develop and implement a core culture framework"
+              }
+            />
+          </PricingBox>
+          <PricingBox
+            packageName="Premium"
+            price={isMonthly ? "589" : "999"}
+            duration={isMonthly ? "mo" : "yr"}
+            subtitle=""
+          >
+            <p className="mb-3 text-xs">
+              Includes all services from the Premium Package, plus
+            </p>
+            <p className="text-sm font-semibold">
+              Business Feasibility Analysis
+            </p>
+            <TextItem
+              text={
+                "Analyze and consult on the feasibility of the business plan for each project"
+              }
+            />
+            <p className="mt-3 text-sm font-semibold">
+              Market Release Support:
+            </p>
+            <TextItem
+              text={
+                "Consult and support the processes required to release and distribute products to the market"
+              }
+            />
+            <p className="mt-5 text-[13px]">
+              With RB's team-building packages, you can ensure your project is
+              supported by a team of skilled professionals, tailored to your
+              specific needs, and equipped to handle any challenges that arise.
+            </p>
           </PricingBox>
         </div>
       </div>
