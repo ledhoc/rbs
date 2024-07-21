@@ -14,6 +14,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Red Breed",
   description: "This is Home Page for Red Breed",
+  // other metadata
 };
 
 export default function Home() {
@@ -21,15 +22,15 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
+      <AboutSectionTwo />
       <Features />
-      {/* <Video /> */}
-      {/* <Brands /> */}
-      {/* <AboutSectionOne /> */}
-      {/* <AboutSectionTwo /> */}
-      {/* <Testimonials /> */}
+      <Video />
+      <Brands />
+      <AboutSectionOne />
+      <Testimonials />
       <Pricing />
-      {/* <Blog /> */}
-      {/* <Contact /> */}
+      <Blog />
+      <Contact />
     </>
   );
 }
