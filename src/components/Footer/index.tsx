@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer className="relative z-10 bg-white pt-16 dark:bg-black md:pt-20 lg:pt-24">
+      <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
@@ -27,7 +27,8 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer lobortis.
                 </p>
                 <div className="flex items-center">
                   <a
@@ -108,7 +109,7 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Useful Links
@@ -208,13 +209,30 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div> */}
+            </div>
           </div>
 
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[red83]"></div>
+          <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-            ©2024 by Red Breed
+              Template by{" "}
+              <a
+                href="http://uideck.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary"
+              >
+                UIdeck
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://nextjstemplates.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary"
+              >
+                Next.js Templates
+              </a>
             </p>
           </div>
         </div>
@@ -226,7 +244,7 @@ const Footer = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle opacity="0.8" cx="49.5" cy="49.5" r="49.5" fill="red" />
+            <circle opacity="0.8" cx="49.5" cy="49.5" r="49.5" fill="#959CB1" />
             <mask
               id="mask0_94:899"
               style={{ maskType: "alpha" }}
@@ -241,7 +259,7 @@ const Footer = () => {
                 cx="49.5"
                 cy="49.5"
                 r="49.5"
-                fill="red"
+                fill="#4A6CF7"
               />
             </mask>
             <g mask="url(#mask0_94:899)">
@@ -347,8 +365,8 @@ const Footer = () => {
                 y2="59.8878"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="red" stopOpacity="0.62" />
-                <stop offset="1" stopColor="red" stopOpacity="0" />
+                <stop stopColor="#4A6CF7" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
               </linearGradient>
               <linearGradient
                 id="paint1_linear_94:889"
@@ -358,8 +376,8 @@ const Footer = () => {
                 y2="20.668"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="red" stopOpacity="0" />
-                <stop offset="1" stopColor="red" stopOpacity="0.51" />
+                <stop stopColor="#4A6CF7" stopOpacity="0" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.51" />
               </linearGradient>
               <linearGradient
                 id="paint2_linear_94:889"
@@ -369,8 +387,8 @@ const Footer = () => {
                 y2="25.1062"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="red" stopOpacity="0.62" />
-                <stop offset="1" stopColor="red" stopOpacity="0" />
+                <stop stopColor="#4A6CF7" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
               </linearGradient>
               <linearGradient
                 id="paint3_linear_94:889"
@@ -380,8 +398,8 @@ const Footer = () => {
                 y2="80.6826"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="red" stopOpacity="0" />
-                <stop offset="1" stopColor="red" stopOpacity="0.51" />
+                <stop stopColor="#4A6CF7" stopOpacity="0" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.51" />
               </linearGradient>
               <linearGradient
                 id="paint4_linear_94:889"
@@ -391,8 +409,8 @@ const Footer = () => {
                 y2="58.2156"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="red" stopOpacity="0.62" />
-                <stop offset="1" stopColor="red" stopOpacity="0" />
+                <stop stopColor="#4A6CF7" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
               </linearGradient>
               <linearGradient
                 id="paint5_linear_94:889"
@@ -402,8 +420,8 @@ const Footer = () => {
                 y2="41.6598"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="red" stopOpacity="0" />
-                <stop offset="1" stopColor="red" stopOpacity="0.51" />
+                <stop stopColor="#4A6CF7" stopOpacity="0" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.51" />
               </linearGradient>
             </defs>
           </svg>
