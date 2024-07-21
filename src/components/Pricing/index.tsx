@@ -143,9 +143,9 @@ const Pricing = () => {
               }
             />
             <p className="mt-5 text-[13px]">
-              With RB's team-building packages, you can ensure your project is
+              {`With RB's team-building packages, you can ensure your project is
               supported by a team of skilled professionals, tailored to your
-              specific needs, and equipped to handle any challenges that arise.
+              specific needs, and equipped to handle any challenges that arise.`}
             </p>
           </PricingBox>
         </div>

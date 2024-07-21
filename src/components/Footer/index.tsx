@@ -1,6 +1,6 @@
 "use client";
 import FooterBackground from "@/components/Footer/Background";
-import LocationIcon from "@/components/Footer/locationIcon";
+import LocationIcon from "@/components/Footer/LocationIcon";
 import Logo from "@/components/Logo";
 import Image from "next/image";
 import Link from "next/link";
