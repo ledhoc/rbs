@@ -1,7 +1,7 @@
 "use client";
 import FooterBackground from "@/components/Footer/Background";
 import LocationIcon from "@/components/Footer/LocationIcon";
-import Logo from "@/components/Logo";
+import Logo from "@/components/Logo/white";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,11 +12,11 @@ const Footer = () => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
-              <div className="mb-12 max-w-[360px] lg:mb-16">
-                <Link href="/" className="mb-8 inline-block">
-                  <Logo width={241} height={54} color="white" />
+              <div className="mb-12 max-w-[360px] lg:mb-16 ">
+                <Link href="/" className={`header-logo`}>
+                  <Logo />
                 </Link>
-                <p className="mb-9 text-base leading-relaxed text-white">
+                <p className="mb-9 mt-7 text-base leading-relaxed text-white">
                   We build killer Squarespace sites with our quick and pain-free
                   process
                 </p>

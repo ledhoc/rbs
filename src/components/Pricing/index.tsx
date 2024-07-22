@@ -118,7 +118,7 @@ const Pricing = () => {
             />
           </PricingBox>
           <PricingBox
-            packageName="Premium"
+            packageName="Full Service"
             price={isMonthly ? "589" : "999"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle=""

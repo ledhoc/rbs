@@ -7,7 +7,10 @@ import { Inter } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 
-const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "700"] });
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "700"],
+});
 
 // const montserrat = Montserrat({
 //   subsets: ["cyrillic-ext", "cyrillic", "latin-ext", "latin", "vietnamese"],
