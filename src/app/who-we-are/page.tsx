@@ -1,0 +1,151 @@
+import Breadcrumb from "@/components/Common/Breadcrumb";
+import Contact from "@/components/Contact";
+
+import { Metadata } from "next";
+import Link from "next/link";
+import Image from "next/image";
+import CardVisit from "@/components/CardVisit";
+
+export const metadata: Metadata = {
+  title: "Who we are | Red Breed",
+  description: "This is Who We Are Page for Red Breed",
+  // other metadata
+};
+const data = [
+  {
+    id: 0,
+    position: "Tech Leader",
+    description:
+      "Our tech leader oversees the technical direction of the company, ensuring that we stay at the forefront of technology trends and deliver innovative solutions to our clients.",
+  },
+  {
+    id: 1,
+    position: "Key Technologists",
+    description:
+      "Our key tech experts specialize in various fields such as AI, machine learning, cloud computing, and cybersecurity, providing deep technical knowledge and cutting-edge solutions.",
+  },
+  {
+    id: 2,
+    position: "Chief Technology Officer (CTO)",
+    description:
+      "The CTO guides our technological strategy and innovation, ensuring that we leverage the latest technologies to meet our clients' needs.",
+  },
+  {
+    id: 3,
+    position: "Project Managers (PM)",
+    description:
+      "Our project managers ensure that all projects are delivered on time, within scope, and within budget. They coordinate teams, manage resources, and maintain constant communication with clients.",
+  },
+  {
+    id: 4,
+    position: "Design Leads",
+    description:
+      "Our design leads create user-centric designs that enhance the user experience and ensure that our solutions are both functional and aesthetically pleasing.",
+  },
+  {
+    id: 5,
+    position: "Business Analysts",
+    description:
+      "Our business analysts bridge the gap between technology and business, understanding client requirements and translating them into effective technical solutions.",
+  },
+  {
+    id: 6,
+    position: "Marketing Solutions Team",
+    description:
+      "Our marketing solutions experts help clients enhance their online presence and reach their target audience through innovative digital marketing strategies.",
+  },
+  {
+    id: 7,
+    position: "Consultants",
+    description:
+      "Our consultants provide expert advice and solutions across various industries, helping businesses optimize their operations and implement effective IT strategies.",
+  },
+  {
+    id: 8,
+    position: "Developer",
+    description:
+      "Our consultants provide expert advice and solutions across various industries, helping businesses optimize their operations and implement effective IT strategies.",
+  },
+];
+
+const ContactPage = () => {
+  return (
+    <>
+      <section className="relative z-10 overflow-hidden pt-28">
+        <div className="container">
+          <div className="flex flex-col">
+            <div className="flex">
+              <div className="text-end">
+                <ul className="flex items-center md:justify-end">
+                  <li className="flex items-center">
+                    <Link
+                      href="/"
+                      className="pr-1 text-base font-medium text-gray-light hover:text-primary"
+                    >
+                      Home
+                    </Link>
+                    <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
+                  </li>
+                  <li className="text-base font-medium text-primary">
+                    {"Who We Are"}
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="flex flex-row">
+              <div className="flex w-1/2 flex-col justify-center">
+                <h1 className="text-6xl font-bold text-primary">Our Team</h1>
+                <p className="mt-7 text-xl">
+                  Our team comprises over 300 highly skilled professionals, each
+                  bringing unique expertise and experience to our projects. We
+                  pride ourselves on our diverse and talented team, including:
+                </p>
+              </div>
+              <div className="w-1/2">
+                <Image
+                  src={"/svgs/who-we-are.svg"}
+                  width={500}
+                  height={500}
+                  alt={"who-we-are"}
+                />
+              </div>
+            </div>
+            <div className="my-9 flex flex-row">
+              <div className="flex w-[620px]">
+                <div className="flex flex-col">
+                  <CardVisit color={"bg-primary"} />
+                  <div className="mt-5">
+                    <CardVisit color="bg-[#EBF5FF]" />
+                  </div>
+                </div>
+                <div className="ml-5 mt-20 flex flex-col">
+                  <CardVisit color="bg-[#EBF5FF]" />
+                  <div className="mt-5">
+                    <CardVisit color={"bg-primary"} />
+                  </div>
+                </div>
+              </div>
+              <div className="ml-10 flex flex-1 flex-col">
+                {data.map(({ id, position, description }) => {
+                  return (
+                    <div
+                      key={`${id}-${position}`}
+                      className="mb-5 flex flex-col"
+                    >
+                      <p className="text-xl font-semibold text-primary">
+                        {position}
+                      </p>
+                      <p className="text-lg font-thin">{description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default ContactPage;

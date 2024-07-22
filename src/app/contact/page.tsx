@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contact Page | Red Breed",
-  description: "This is Contact Page for Startup Nextjs Template",
+  description: "This is Contact Page for Red Breed",
   // other metadata
 };
 
