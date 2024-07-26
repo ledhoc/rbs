@@ -7,7 +7,7 @@ const Dot = (props) => (
     fill="none"
     {...props}
   >
-    <circle cx={4} cy={4} r={4} fill={props.color || "#B20000"} />
+    <circle cx={4} cy={4} r={4} fill={props.color || "#1C304B"} />
   </svg>
 );
 export default Dot;

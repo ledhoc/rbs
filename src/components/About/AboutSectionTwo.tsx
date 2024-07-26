@@ -27,7 +27,7 @@ const AboutSectionTwo = () => {
               />
             </div>
           </div>
-          <div className="w-full max-w-[860px] lg:w-2/3">
+          <div className="mt-12 w-full max-w-[860px] lg:w-2/3">
             <h3 className="flex flex-wrap text-[50px]">
               Looking to hire&nbsp;
               <p className="text-primary">top IT&nbsp;</p>

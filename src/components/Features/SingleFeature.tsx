@@ -1,7 +1,15 @@
 import { Feature } from "@/types/feature";
 import ArrowRight from "../Icons/ArrowRight";
 
-const SingleFeature = ({ feature }: { feature: Feature }) => {
+const SingleFeature = ({
+  feature,
+  onClickSwitch,
+  currentIndex,
+}: {
+  feature: Feature;
+  onClickSwitch: (index: number) => void;
+  currentIndex: number;
+}) => {
   const { icon, title, paragraph } = feature;
   return (
     <div className="w-full rounded-2xl bg-white p-4 drop-shadow-sm">
@@ -16,7 +24,10 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           <div>{paragraph}</div>
         </div>
       </div>
-      <div className="mr-4 mt-2 flex flex-row-reverse">
+      <div
+        className="mr-4 mt-2 flex cursor-pointer flex-row-reverse"
+        onClick={() => onClickSwitch(currentIndex)}
+      >
         <ArrowRight color={"#B20000"} />
       </div>
     </div>

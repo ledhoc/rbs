@@ -2,6 +2,7 @@ import SectionTitle from "../Common/SectionTitle";
 import SingleFeature from "./SingleFeature";
 import featuresData from "./featuresData";
 import Image from "next/image";
+import FeatureSwitch from "./FeatureSwitch";
 
 const Features = () => {
   return (
@@ -14,11 +15,7 @@ const Features = () => {
             center
           />
 
-          <div className="grid grid-cols-1 gap-x-8 gap-y-8 md:grid-cols-2 lg:grid-cols-2">
-            {featuresData.map((feature) => (
-              <SingleFeature key={feature.id} feature={feature} />
-            ))}
-          </div>
+          <FeatureSwitch />
           <div className="relative mr-[-300px] mt-[-50px]">
             <div className="absolute bottom-0 right-10 z-[-1]">
               <Image
