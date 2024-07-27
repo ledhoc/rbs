@@ -23,6 +23,7 @@ const TextItem = ({ text }: TextItemProps) => {
 
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
+  const [selectedIndex, setIndex] = useState(2);
 
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
@@ -31,15 +32,17 @@ const Pricing = () => {
           title="CHOOSE YOUR PACKAGE"
           paragraph="RB offers comprehensive team-building packages designed to meet your specific project needs. Our packages provide tailored solutions to help you assemble and maintain a highly skilled IT team. Choose from our four packages:"
           center
-          width="800px"
+          width="980px"
+          mb="40px"
         />
-
         <div className="grid grid-cols-1 gap-x-4 gap-y-10 md:grid-cols-2 lg:grid-cols-4">
           <PricingBox
+            onClickBox={() => setIndex(0)}
             packageName="Basic"
             price={isMonthly ? "40" : "120"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle=""
+            selected={selectedIndex === 0}
           >
             <div className="flex flex-col">
               <p className="text-sm font-semibold">Requirement Confirmation</p>
@@ -70,10 +73,12 @@ const Pricing = () => {
             </div>
           </PricingBox>
           <PricingBox
+            onClickBox={() => setIndex(1)}
             packageName="Standard"
             price={isMonthly ? "399" : "789"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle=""
+            selected={selectedIndex === 1}
           >
             <p className="mb-3 text-xs">
               Includes all services from the Basic Package, plus
@@ -97,10 +102,13 @@ const Pricing = () => {
             />
           </PricingBox>
           <PricingBox
+            onClickBox={() => setIndex(2)}
             packageName="Premium"
             price={isMonthly ? "589" : "999"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle=""
+            selected={selectedIndex === 2}
+            isTheBest
           >
             <p className="mb-3 text-xs">
               Includes all services from the Standard Package, plus
@@ -118,10 +126,12 @@ const Pricing = () => {
             />
           </PricingBox>
           <PricingBox
+            onClickBox={() => setIndex(3)}
             packageName="Full Service"
             price={isMonthly ? "589" : "999"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle=""
+            selected={selectedIndex === 3}
           >
             <p className="mb-3 text-xs">
               Includes all services from the Premium Package, plus

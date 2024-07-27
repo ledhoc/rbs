@@ -1,5 +1,7 @@
 "use client";
 import LocationIcon from "@/components/Footer/LocationIcon";
+import menuData from "@/components/Header/menuData";
+import Dot from "@/components/Icons/Dot";
 import Logo from "@/components/Logo/white";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,6 +21,27 @@ const Footer = () => {
                   We build killer Squarespace sites with our quick and pain-free
                   process
                 </p>
+                <div className="flex flex-row">
+                  <p className="">Quick links</p>
+                  <div>
+                    {menuData.map((menuItem) => (
+                      <ul
+                        key={menuItem.title}
+                        className="mb-2 ml-5 flex flex-col"
+                      >
+                        <li className="flex flex-row items-center">
+                          <Dot color={"#B20000"} />
+                          <Link
+                            href={menuItem.path}
+                            className={`} ml-3 flex text-base text-primary`}
+                          >
+                            {menuItem.title}
+                          </Link>
+                        </li>
+                      </ul>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
 

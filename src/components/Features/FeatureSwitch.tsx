@@ -16,7 +16,7 @@ export default function FeatureSwitch() {
   const wrapClassName =
     mode === "feature_summary"
       ? `grid grid-cols-1 gap-x-8 gap-y-8 md:grid-cols-2 lg:grid-cols-2 ${mode === "feature_summary" ? "visible" : "invisible"}`
-      : "flex h-[300px] w-full flex-col rounded-2xl border-[1px] border-primary bg-white min-h-[500px]";
+      : "flex h-[300px] w-full flex-col rounded-2xl border-[1px] border-primary bg-white h-[500px] border-b-4";
 
   const onClickSwitchDetail = (index) => {
     setCurrentIndex(index);
