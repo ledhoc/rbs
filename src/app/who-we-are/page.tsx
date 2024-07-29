@@ -101,7 +101,7 @@ const ContactPage = () => {
       <section className="relative z-10 overflow-hidden pt-28">
         <div className="container">
           <div className="flex flex-col">
-            <div className="flex">
+            <div className="invisible flex h-0 md:visible md:h-auto">
               <div className="text-end">
                 <ul className="flex items-center md:justify-end">
                   <li className="flex items-center">
@@ -119,16 +119,18 @@ const ContactPage = () => {
                 </ul>
               </div>
             </div>
-            <div className="flex flex-row">
-              <div className="flex w-1/2 flex-col justify-center">
-                <h1 className="text-6xl font-bold text-primary">Our Team</h1>
-                <p className="mt-7 text-xl">
+            <div className="flex flex-col md:flex-row">
+              <div className="flex w-full flex-col justify-center  md:w-1/2">
+                <h1 className="text-center text-3xl font-bold text-primary md:text-left md:text-6xl">
+                  Our Team
+                </h1>
+                <p className="mt-3 text-justify text-base md:mt-7  md:text-xl">
                   Our team comprises over 300 highly skilled professionals, each
                   bringing unique expertise and experience to our projects. We
                   pride ourselves on our diverse and talented team, including:
                 </p>
               </div>
-              <div className="w-1/2">
+              <div className="ml-3 flex w-3/4 justify-center text-center md:ml-0 md:w-1/2">
                 <Image
                   src={"/svgs/who-we-are.svg"}
                   width={500}
@@ -138,7 +140,7 @@ const ContactPage = () => {
               </div>
             </div>
             <div className="my-9 flex flex-row">
-              <div className="flex w-[620px]">
+              <div className="invisible  flex w-0 md:visible md:w-[620px]">
                 <div className="flex flex-col">
                   <CardVisit color={"bg-primary"} />
                   <div className="mt-5">
@@ -152,7 +154,7 @@ const ContactPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="ml-10 flex flex-1 flex-col">
+              <div className="ml-2 flex flex-1 flex-col md:ml-10">
                 {data.map(({ id, position, description }) => {
                   return (
                     <div
@@ -171,15 +173,15 @@ const ContactPage = () => {
           </div>
         </div>
         <div className="my-20  flex flex-col items-center justify-center bg-[#FFFBFB]">
-          <p className="mt-14 flex  text-center font-semibold md:text-[30px]">
+          <p className="mx-8 mt-14 flex  text-center font-semibold md:text-[30px]">
             Our experts have been working alongside in-house teams for over a
             decade.
           </p>
-          <div className="container grid w-full gap-x-8 py-16  md:grid-cols-4">
+          <div className="container grid  w-full grid-cols-2 gap-x-2 py-16 md:grid-cols-4 md:gap-x-8">
             {teamData.map((item, index) => (
               <div
                 key={`${index}`}
-                className="flex aspect-square flex-col items-center justify-center rounded-full border-[1px] border-primary bg-white text-gray-light"
+                className="mb-7 mr-2 flex aspect-square flex-col items-center justify-center rounded-full border-[1px] border-primary bg-white text-gray-light md:mb-auto"
               >
                 {item.icon}
                 <p className="font-bold md:text-[64px]">{item.title}</p>
