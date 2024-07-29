@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const ContactPage = () => {
   return (
     <>
-      <section className="relative z-10 overflow-hidden pt-28 lg:pt-[150px]">
+      <section className="relative z-10 overflow-hidden bg-white pt-28 lg:pt-[150px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap ">
             <div className="flex w-full  flex-col items-center justify-center">

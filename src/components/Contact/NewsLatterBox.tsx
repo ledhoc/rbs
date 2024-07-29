@@ -25,11 +25,11 @@ const NewsLatterBox = () => {
   const { theme } = useTheme();
 
   return (
-    <div className="relative z-10 my-4 mb-5 flex  flex-1 flex-col  rounded-xl  bg-primary p-11 pb-0 pr-0 shadow-three">
-      <h3 className="mb-4 text-2xl font-bold leading-tight text-white">
+    <div className="relative z-10  mb-5 flex  flex-1 flex-col  rounded-xl  p-10 pb-0 pr-0 ">
+      <h3 className="mb-4 text-2xl font-bold leading-tight text-gray-light">
         Contact Information
       </h3>
-      <p className="mb-7  pr-11 text-sm leading-relaxed text-[#FFA8A8]">
+      <p className="mb-7  pr-11 text-sm leading-relaxed text-[#878787]">
         Whether you are searching for your own new job or have hiring needs for
         your organization, Service Specialists can help. Send us a message to
         get started.
@@ -39,13 +39,10 @@ const NewsLatterBox = () => {
           return (
             <div key={`${id}`} className="mb-5 flex flex-row">
               <div> {icon}</div>
-              <p className="ml-3 text-base font-thin text-white ">{text}</p>
+              <p className="ml-3 text-base  text-gray-light ">{text}</p>
             </div>
           );
         })}
-      </div>
-      <div className="flex flex-row-reverse">
-        <Decor />
       </div>
     </div>
   );

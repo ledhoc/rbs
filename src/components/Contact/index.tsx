@@ -2,7 +2,7 @@ import NewsLatterBox from "./NewsLatterBox";
 
 const Contact = () => {
   return (
-    <section id="contact" className="overflow-hidden pb-16 pt-10">
+    <section id="contact" className="overflow-hidden  pb-16 pt-10">
       <div className="container">
         <div className="bg-red -mx-4 flex flex-wrap rounded-xl border-[1px] border-primary">
           <div className="flex w-full px-4 xl:w-5/12">
@@ -15,7 +15,7 @@ const Contact = () => {
               "
             >
               <form>
-                <div className="-mx-4 flex flex-wrap">
+                <div className="-mx-4 mt-5 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
                       <label
@@ -77,7 +77,7 @@ const Contact = () => {
                       ></textarea>
                     </div>
                   </div>
-                  <div className="mt-10 flex w-full flex-col-reverse px-4">
+                  <div className="mb-5 mt-10 flex w-full flex-col-reverse px-4">
                     <button className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
                       Submit Ticket
                     </button>
