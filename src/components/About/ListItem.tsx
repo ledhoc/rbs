@@ -8,7 +8,9 @@ interface ListItemProps {
 const ListItem = ({ text }: ListItemProps) => {
   return (
     <div className="mt-5 flex flex-row">
-      <CheckIcon />
+      <div className="mt-2 md:mt-0">
+        <CheckIcon />
+      </div>
       <p className="ml-6 text-gray-light">{text}</p>
     </div>
   );

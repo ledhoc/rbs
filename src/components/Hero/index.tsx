@@ -10,12 +10,12 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden pb-16 pt-[100px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className="relative z-10 overflow-hidden pb-0 pt-[100px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
       >
         <div className="container">
           <div className="-mx-4 flex">
-            <div className="flex w-full flex-row px-4">
-              <div className="w-1/2 flex-col">
+            <div className="flex w-full flex-col px-4 md:flex-row">
+              <div className="flex flex-col  items-center md:w-1/2 md:items-start">
                 <h1 className="text-3xl font-bold leading-tight text-gray-light sm:text-4xl sm:leading-tight md:text-6xl md:leading-tight">
                   Build & Run your
                 </h1>
@@ -30,7 +30,7 @@ const Hero = () => {
                 </p>
                 <div className="mt-[50px]">
                   <ContactButton />
-                  <div className="ml-[-75px] mt-[-122px]">
+                  <div className="ml-[-85px] mt-[-105px] md:ml-[-75px]  md:mt-[-122px]">
                     <Image
                       src="/svgs/arrow-curve.svg"
                       alt="arrow-curve"
@@ -40,21 +40,30 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-1/2">
-                <Image
-                  src="/images/hero/touch.png"
-                  alt="hero-touch"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{
-                    bottom: 70,
-                    position: "absolute",
-                    width: "42%",
-                    minWidth: "600px",
-                    height: "auto",
-                  }}
-                />
+              <div className="relative flex items-center justify-center md:absolute md:bottom-[70px] md:right-0 md:w-1/2">
+                <div className="invisible md:visible">
+                  <Image
+                    src="/images/hero/touch.png"
+                    alt="hero-touch"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{
+                      width: "80%",
+                      minWidth: "600px",
+                      height: "auto",
+                    }}
+                  />
+                </div>
+                <div className="visible absolute mt-[-70px] md:invisible">
+                  <Image
+                    src="/images/hero/touch.png"
+                    alt="hero-touch"
+                    width={350}
+                    height={300}
+                    sizes="100vw"
+                  />
+                </div>
               </div>
             </div>
           </div>

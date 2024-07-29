@@ -12,7 +12,7 @@ const SingleFeature = ({
 }) => {
   const { icon, title, paragraph } = feature;
   return (
-    <div className="w-full rounded-2xl bg-white p-4 drop-shadow-sm">
+    <div className="w-full rounded-2xl bg-white p-4 shadow">
       <div className="wow fadeInUp flex flex-row" data-wow-delay=".15s">
         <div className="mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-md bg-opacity-10 text-primary">
           {icon}

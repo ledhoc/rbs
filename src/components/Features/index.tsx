@@ -7,7 +7,7 @@ import FeatureSwitch from "./FeatureSwitch";
 const Features = () => {
   return (
     <>
-      <section id="features" className="py-16 md:py-20 lg:py-28">
+      <section id="features" className="py-0 md:py-20 lg:py-28">
         <div className="container">
           <SectionTitle
             title="What We Do"
@@ -15,9 +15,11 @@ const Features = () => {
             center
           />
 
-          <FeatureSwitch />
-          <div className="relative mr-[-300px] mt-[-50px]">
-            <div className="absolute bottom-0 right-10 z-[-1]">
+          <div className="mt-[-80px] md:mt-0">
+            <FeatureSwitch />
+          </div>
+          <div className="invisible  w-0 md:visible md:w-auto">
+            <div className="absolute  bottom-[-950px] right-10 z-[-1] w-[400px]">
               <Image
                 src="/svgs/multiple-dot.svg"
                 alt="hero-touch"
@@ -25,8 +27,7 @@ const Features = () => {
                 height={0}
                 sizes="100vw"
                 style={{
-                  width: "50%",
-                  minWidth: "600px",
+                  width: "100%",
                   height: "auto",
                 }}
               />

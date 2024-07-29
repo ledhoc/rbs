@@ -26,7 +26,7 @@ const Pricing = () => {
   const [selectedIndex, setIndex] = useState(2);
 
   return (
-    <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
+    <section id="pricing" className="relative z-10 py-20 md:py-20 lg:py-20">
       <div className="container">
         <SectionTitle
           title="CHOOSE YOUR PACKAGE"

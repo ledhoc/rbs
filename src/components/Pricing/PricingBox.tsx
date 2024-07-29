@@ -26,7 +26,7 @@ const PricingBox = (props: {
   return (
     <div
       onClick={onClickBox}
-      className={`flex min-h-[550px] w-full overflow-hidden rounded-2xl ${selected ? "border-[1px] border-primary" : ""} drop-shadow-md`}
+      className={`flex min-h-[550px] w-full overflow-hidden rounded-2xl border-[1px] ${selected ? "border-primary" : "border-transparent"} drop-shadow-md`}
     >
       <div className="relative z-10 flex flex-col rounded-sm bg-white   shadow-three hover:shadow-one  dark:shadow-two dark:hover:shadow-gray-dark">
         <div

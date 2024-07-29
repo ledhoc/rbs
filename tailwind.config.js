@@ -11,7 +11,13 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "1rem",
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
+      },
     },
 
     screens: {
@@ -30,7 +36,7 @@ module.exports = {
       xl: "1200px",
       // => @media (min-width: 1200px) { ... }
 
-      "2xl": "1400px",
+      "2xl": "1600px",
       // => @media (min-width: 1400px) { ... }
     },
     extend: {
