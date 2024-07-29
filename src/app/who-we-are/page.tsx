@@ -5,6 +5,10 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import CardVisit from "@/components/CardVisit";
+import AboutCountry from "@/components/Icons/AboutCountry";
+import AboutPeople from "@/components/Icons/AboutPeople";
+import AboutLocation from "@/components/Icons/AboutLocation";
+import AboutClient from "@/components/Icons/AboutClient";
 
 export const metadata: Metadata = {
   title: "Who we are | Red Breed",
@@ -65,6 +69,29 @@ const data = [
     position: "Developer",
     description:
       "Our consultants provide expert advice and solutions across various industries, helping businesses optimize their operations and implement effective IT strategies.",
+  },
+];
+
+const teamData = [
+  {
+    icon: <AboutCountry />,
+    title: "04",
+    subTitle: "Countries",
+  },
+  {
+    icon: <AboutClient />,
+    title: "40",
+    subTitle: "Clients",
+  },
+  {
+    icon: <AboutLocation />,
+    title: "06",
+    subTitle: "Locations",
+  },
+  {
+    icon: <AboutPeople />,
+    title: "6000",
+    subTitle: "people",
   },
 ];
 
@@ -141,6 +168,24 @@ const ContactPage = () => {
                 })}
               </div>
             </div>
+          </div>
+        </div>
+        <div className="my-20  flex flex-col items-center justify-center bg-[#FFFBFB]">
+          <p className="mt-14 flex  text-center font-semibold md:text-[30px]">
+            Our experts have been working alongside in-house teams for over a
+            decade.
+          </p>
+          <div className="container grid w-full gap-x-8 py-16  md:grid-cols-4">
+            {teamData.map((item, index) => (
+              <div
+                key={`${index}`}
+                className="flex aspect-square flex-col items-center justify-center rounded-full border-[1px] border-primary bg-white text-gray-light"
+              >
+                {item.icon}
+                <p className="font-bold md:text-[64px]">{item.title}</p>
+                <p className="md:text-[19px]">{item.subTitle}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
