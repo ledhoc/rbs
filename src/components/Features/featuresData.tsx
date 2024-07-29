@@ -107,6 +107,82 @@ const featuresData: Feature[] = [
         ]}
       />
     ),
+    paragraphDetail: (
+      <ListTextItems
+        list={[
+          {
+            title: "Supply CV: ",
+            text: (
+              <p>
+                RB specializes in providing comprehensive staffing solutions
+                tailored to your IT needs. We supply a diverse range of CVs from
+                our extensive database, which includes IT personnel with various
+                skills and expertise levels. Whether you need interns, trainees,
+                freshers, juniors, middle-level, senior engineers, or lead
+                engineers, we have the right candidates for you. Additionally,
+                we offer HR and operational consultants to ensure seamless
+                project execution.
+                <br /> Our database is continually updated and expanded through
+                rigorous training and verification processes, encompassing both
+                Vietnamese and international developers. This ensures that we
+                can consistently provide top-quality IT professionals to meet
+                the specific requirements of your projects.
+              </p>
+            ),
+          },
+          {
+            title: "Recruitment Services: ",
+            text: (
+              <p>
+                RB offers end-to-end recruitment services to ensure you find the
+                best candidates for your IT needs. Our process includes:
+                <br />
+                - Recruitment: We actively search for and attract top IT talent
+                to meet your specific job requirements. <br />
+                - CV Collection: We collect and curate CVs based on your job
+                postings and customer requirements, ensuring a perfect match for
+                your projects. <br />
+                - Interview Coordination: We set up interview schedules and
+                manage the entire process, allowing you to focus on selecting
+                the right candidates. <br />
+                - Onboarding Support: We assist with the onboarding procedure,
+                including explaining company policies, benefits, and welfare. We
+                ensure a smooth transition for new hires by providing feedback
+                and support throughout the onboarding process. <br />
+                With RB, you can be confident that your recruitment needs will
+                be handled efficiently and professionally, ensuring you get the
+                best talent for your team.
+              </p>
+            ),
+          },
+          {
+            title: "Recruitment Services: ",
+            text: (
+              <p>
+                RB offers end-to-end recruitment services to ensure you find the
+                best candidates for your IT needs. Our process includes:
+                <br />
+                - Recruitment: We actively search for and attract top IT talent
+                to meet your specific job requirements. <br />
+                - CV Collection: We collect and curate CVs based on your job
+                postings and customer requirements, ensuring a perfect match for
+                your projects. <br />
+                - Interview Coordination: We set up interview schedules and
+                manage the entire process, allowing you to focus on selecting
+                the right candidates. <br />
+                - Onboarding Support: We assist with the onboarding procedure,
+                including explaining company policies, benefits, and welfare. We
+                ensure a smooth transition for new hires by providing feedback
+                and support throughout the onboarding process. <br />
+                With RB, you can be confident that your recruitment needs will
+                be handled efficiently and professionally, ensuring you get the
+                best talent for your team.
+              </p>
+            ),
+          },
+        ]}
+      />
+    ),
   },
   {
     id: 1,
@@ -193,6 +269,144 @@ const featuresData: Feature[] = [
           },
         ]}
       />
+    ),
+    paragraphDetail: (
+      <>
+        <p className="mt-3">
+          RB offers comprehensive team-building packages designed to meet your
+          specific project needs. Our packages provide tailored solutions to
+          help you assemble and maintain a highly skilled IT team. <br />
+          <p>
+            {`RB can develop, manage, and support projects from concept to product
+            release, tailored to the client's budget and requirements. Choose from our four packages:`}
+          </p>
+          <br />
+        </p>
+        <ListTextItems
+          list={[
+            {
+              title: (
+                <p>
+                  A. Basic Package <br />
+                </p>
+              ),
+              text: (
+                <p>
+                  Requirement Confirmation: <br />
+                  <p>- Confirm project requirements and HR targets</p>
+                  <p>
+                    - Consult on suitable solutions and technologies based on
+                    project demands
+                  </p>
+                  <p>- Suggest personnel with appropriate skills</p>
+                  <br />
+                  HR Consultation:
+                  <br />
+                  <p> - Advise on wages and benefits</p>
+                  <p>
+                    - Recommend the skills, levels, and quantity of candidates
+                    required for the team
+                  </p>
+                  <p>
+                    - Consult on training fees and backup personnel preparation
+                  </p>
+                  <br />
+                  Recruitment: <br />
+                  <p> - Develop a recruitment plan based on budget</p>
+                  <p>- Prepare CV data and set up interview schedules</p>
+                </p>
+              ),
+            },
+            {
+              title: (
+                <p>
+                  B. Standard Package <br />
+                </p>
+              ),
+              text: (
+                <p>
+                  Includes all services from the Basic Package, plus:
+                  <br />
+                  <br />
+                  <p>Technical Consulting: </p>
+                  <p>
+                    - Support in resolving technical issues during project
+                    deployment
+                  </p>
+                  <p>
+                    - Address technical challenges and changes due to business
+                    plan adjustments
+                  </p>
+                  <br />
+                  Operational Processing:
+                  <br />
+                  <p>
+                    - Consult on basic operational processes for back office,
+                    project development, and recruitment departments
+                  </p>
+                </p>
+              ),
+            },
+            {
+              title: (
+                <p>
+                  C. Premium Package
+                  <br />
+                </p>
+              ),
+              text: (
+                <p>
+                  Includes all services from the Standard Package, plus:
+                  <br />
+                  <br />
+                  <p>Working Culture:</p>
+                  <p>
+                    - Consult on activities to build and maintain a positive
+                    working culture for the team/company
+                  </p>
+                  <p>
+                    - Collaborate with culture experts to develop and implement
+                    a core culture framework
+                  </p>
+                </p>
+              ),
+            },
+            {
+              title: (
+                <p>
+                  D. Full Service
+                  <br />
+                </p>
+              ),
+              text: (
+                <p>
+                  Includes all services from the Premium Package, plus:
+                  <br />
+                  <br />
+                  <p>Business Feasibility Analysis:</p>
+                  <p>
+                    - Analyze and consult on the feasibility of the business
+                    plan for each project
+                  </p>
+                  <br />
+                  <p>Market Release Support:</p>
+                  <p>
+                    - Consult and support the processes required to release and
+                    distribute products to the market
+                  </p>
+                  <br />
+                  <p>
+                    With RB's team-building packages, you can ensure your
+                    project is supported by a team of skilled professionals,
+                    tailored to your specific needs, and equipped to handle any
+                    challenges that arise.
+                  </p>
+                </p>
+              ),
+            },
+          ]}
+        />
+      </>
     ),
   },
   {
@@ -314,6 +528,45 @@ const featuresData: Feature[] = [
         ]}
       />
     ),
+    paragraphDetail: (
+      <>
+        <p className="mt-3">
+          RB provides expert technical consulting services to ensure your
+          projects are equipped with the best solutions and support. Our
+          consulting services are designed to match your project requirements
+          and help you overcome technical challenges. Our offerings include:
+        </p>
+        <ListTextItems
+          list={[
+            {
+              title: "Customized Technical Solutions: ",
+              text: "Develop and implement technical solutions that align with the specific requirements of each project.",
+            },
+            {
+              title: "Deployment Support: ",
+              text: "Assist in resolving technical issues that arise during project deployment, including addressing changes in development solutions due to shifts in business plans.",
+            },
+            {
+              title: "System Review and Improvement:",
+              text: (
+                <p>
+                  - Conduct thorough reviews of current systems and systems in
+                  progress.
+                  <br />- Provide consultation on improvement solutions based on
+                  customer requirements to enhance system performance and
+                  efficiency.
+                </p>
+              ),
+            },
+          ]}
+        />
+        <p>
+          With RB's technical consulting, you can be confident that your project
+          will benefit from tailored solutions, expert support, and continuous
+          improvement to meet your evolving needs.
+        </p>
+      </>
+    ),
   },
   {
     id: 1,
@@ -362,6 +615,52 @@ const featuresData: Feature[] = [
           },
         ]}
       />
+    ),
+    paragraphDetail: (
+      <>
+        <p className="mt-5">
+          RB offers specialized consulting services to address and resolve
+          various challenges within your IT company. Our problem-solving
+          expertise ensures your IT personnel remain stable in both quantity and
+          quality, and that internal conflicts are effectively managed. Our
+          services include:
+        </p>
+        <ListTextItems
+          list={[
+            {
+              title: "IT Personnel Stability Solutions: ",
+              text: "Develop and implement strategies to support the stability of IT personnel, ensuring both quantity and quality are maintained.",
+            },
+            {
+              title: "Conflict Resolution: ",
+              text: (
+                <p>
+                  - Provide solutions for resolving conflicts related to working
+                  culture, benefits, welfare, and labor contracts.
+                  <br />- Offer support ranging from internal arrangements to
+                  legal consultation with law firms.
+                </p>
+              ),
+            },
+            {
+              title: "HR and Operating Strategy: ",
+              text: (
+                <p>
+                  - Consult on effective HR and operating models and strategies
+                  to optimize your workforce.
+                  <br />- Design and implement training programs to enhance
+                  employee skills and performance.
+                </p>
+              ),
+            },
+          ]}
+        />
+        <p>
+          With RB's solving problems consulting, your IT company can maintain a
+          stable, high-quality workforce, resolve conflicts efficiently, and
+          implement effective HR and operating strategies for sustained success.
+        </p>
+      </>
     ),
   },
 ];

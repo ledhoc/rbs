@@ -16,7 +16,7 @@ export default function FeatureSwitch() {
   const wrapClassName =
     mode === "feature_summary"
       ? `grid grid-cols-1 gap-x-8 gap-y-8 md:grid-cols-2 lg:grid-cols-2 ${mode === "feature_summary" ? "visible" : "invisible"}`
-      : "flex h-[300px] w-full flex-col rounded-2xl border-[1px] border-primary bg-white h-[500px] border-b-4";
+      : "overflow-hidden flex h-[300px] w-full flex-col rounded-2xl border-[1px] border-primary bg-white h-[500px] border-b-4";
 
   const onClickSwitchDetail = (index) => {
     setCurrentIndex(index);
@@ -34,7 +34,7 @@ export default function FeatureSwitch() {
           />
         ))
       ) : (
-        <div className="flex">
+        <div className="flex flex-wrap">
           <div
             className="flex cursor-pointer flex-row items-center rounded-br-2xl rounded-tl-2xl bg-primary px-5 py-2"
             onClick={() => onClickMode("feature_summary")}
@@ -51,12 +51,13 @@ export default function FeatureSwitch() {
                 fill="white"
               />
             </svg>
-
             <p className="text-2xl font-medium text-white">
               {featuresData[currentIndex].title}
             </p>
           </div>
-          <div className="bg-blue-500"></div>
+          <div className="scrollbar-hide  ml-5 h-[440px] overflow-y-auto pb-5">
+            {featuresData[currentIndex].paragraphDetail}
+          </div>
         </div>
       )}
     </div>
