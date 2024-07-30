@@ -54,9 +54,7 @@ const PricingBox = (props: {
         <div className="flex-1 flex-col px-4">{children}</div>
 
         <div className="mt-7 flex   justify-center border-b  pb-8">
-          <ContactButton
-            colorClass={isPrimaryColor ? undefined : "bg-gray-400"}
-          />
+          <ContactButton colorClass={selected ? undefined : "bg-gray-400"} />
         </div>
       </div>
     </div>

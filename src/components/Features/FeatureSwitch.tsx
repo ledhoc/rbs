@@ -12,6 +12,14 @@ export default function FeatureSwitch() {
   const onClickMode = (_mode: ModeSwitch) => {
     setMode(_mode);
   };
+  const scrolltoHash = function (element_id: string) {
+    const element = document.getElementById(element_id);
+    element?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "start",
+    });
+  };
 
   const wrapClassName =
     mode === "feature_summary"
@@ -21,6 +29,7 @@ export default function FeatureSwitch() {
   const onClickSwitchDetail = (index) => {
     setCurrentIndex(index);
     setMode("feature_detail");
+    scrolltoHash("features");
   };
   return (
     <div className={wrapClassName}>
@@ -51,7 +60,7 @@ export default function FeatureSwitch() {
                 fill="white"
               />
             </svg>
-            <p className="text-2xl font-medium text-white">
+            <p className="text-xl font-medium text-white md:text-2xl">
               {featuresData[currentIndex].title}
             </p>
           </div>

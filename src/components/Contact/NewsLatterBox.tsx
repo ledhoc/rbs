@@ -12,12 +12,12 @@ const contactData = [
   {
     id: 3,
     icon: <LocationIcon />,
-    text: "Ground Floor, Suite B-D, The Maltsters, Wetmore Road, Burton-on-trent, Staffordshire, DE14 1LS",
+    text: "Red Breed Technology Ltd. Ludwig-Hofacker-Str. 9  71672 Marbach am Neckar GERMANY",
   },
   {
     id: 4,
     icon: <LocationIcon />,
-    text: "Ground Floor, Suite C-D, The Maltsters, Wetmore Road, Burton-on-trent, Staffordshire, DE14 1LS",
+    text: "218 Bach Dang, ACB Building, Phuoc Ninh Ward, Hai Chau District, Danang City, Vietnam",
   },
 ];
 

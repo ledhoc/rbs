@@ -91,7 +91,7 @@ const teamData = [
   {
     icon: <AboutPeople />,
     title: "6000",
-    subTitle: "people",
+    subTitle: "People",
   },
 ];
 

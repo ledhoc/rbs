@@ -9,53 +9,58 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer className="relative z-10 bg-[#FFFBFB] pt-16 md:pt-20 lg:pt-24">
+      <footer className="relative z-10 bg-[#FFFBFB] pt-14">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-            <div className="flex w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
-              <div className="mb-12 flex w-[190px]  max-w-[360px] flex-row md:w-auto md:flex-col lg:mb-16">
+            <div className="flex w-3/5 px-4 pr-10 md:w-2/5">
+              <div className="flex w-[190px] flex-row md:w-auto md:flex-col lg:mb-16">
                 <div>
                   <Link href="/" className={`header-logo`}>
-                    <Logo width={"187"} height={"42"} />
+                    <div className="block md:hidden">
+                      <Logo width={"187"} height={"42"} />
+                    </div>
+                    <div className="hidden md:block">
+                      <Logo />
+                    </div>
                   </Link>
-                  <p className="mb-9 mt-7 text-[10.5px] leading-relaxed text-gray-light md:text-base">
-                    We build killer Squarespace sites with our quick and
-                    pain-free process
+                  <p className="mb-2 mt-7 text-xs font-semibold md:text-base">
+                    Start a conversation with one of our specialist consultants
                   </p>
-                </div>
-
-                <div className="ml-5 flex flex-col  md:ml-0  md:flex-row">
-                  <p className="flex">Quick links</p>
-                  <div className="mt-2 flex min-w-[140px] flex-col md:mt-0">
-                    {menuData.map((menuItem) => (
-                      <ul
-                        key={menuItem.title}
-                        className="flex-co mb-2 ml-5 flex"
-                      >
-                        <li className="flex flex-row flex-wrap items-center">
-                          <div className="invisible w-0 md:visible md:w-auto">
-                            <Dot color={"#B20000"} />
-                          </div>
-                          <p className="visible w-auto text-primary md:invisible md:w-0">
-                            •
-                          </p>
-                          <Link
-                            href={menuItem.path}
-                            className={`ml-3 flex text-xs text-primary md:text-base`}
-                          >
-                            {menuItem.title}
-                          </Link>
-                        </li>
-                      </ul>
-                    ))}
-                  </div>
+                  <p className="mb-9 text-[10.5px] leading-relaxed text-gray-light md:text-base">
+                    Send a brief overview of your requirements and we will
+                    contact you to find out more about your needs.
+                  </p>
                 </div>
               </div>
             </div>
-
-            <div className="px-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3">
-              <div className="mb-2 md:mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-gray-light">
+            <div className="flex w-2/5  flex-col md:ml-0  md:mt-10 md:w-1/5 md:pl-10">
+              <h2 className="mb-2 ml-4 mt-7 text-sm text-gray-light md:mb-8 md:ml-0 md:text-xl md:font-bold">
+                Quick links
+              </h2>
+              <div className="mt-2 flex min-w-[140px] flex-col md:mt-0">
+                {menuData.map((menuItem) => (
+                  <ul key={menuItem.title} className="flex-co mb-2 ml-5 flex">
+                    <li className="flex flex-row flex-wrap items-center">
+                      <div className="invisible w-0 md:visible md:w-auto">
+                        <Dot color={"#B20000"} />
+                      </div>
+                      <p className="visible w-auto text-primary md:invisible md:w-0">
+                        •
+                      </p>
+                      <Link
+                        href={menuItem.path}
+                        className={`ml-3 flex text-xs text-primary md:text-base`}
+                      >
+                        {menuItem.title}
+                      </Link>
+                    </li>
+                  </ul>
+                ))}
+              </div>
+            </div>
+            <div className="w-full px-4 md:mt-10 md:w-2/5">
+              <div className="mb-2 md:mb-5 lg:mb-16">
+                <h2 className="mb-8 text-xl font-bold text-gray-light">
                   Our Offices
                 </h2>
                 <ul className="flex flex-col">
@@ -64,8 +69,8 @@ const Footer = () => {
                       <LocationIcon />
                     </div>
                     <p className="ml-3 text-xs text-gray-light md:text-base">
-                      Ground Floor, Suite B-D, The Maltsters, Wetmore Road,
-                      Burton-on-trent, Staffordshire, DE14 1LS
+                      Red Breed Technology Ltd. Ludwig-Hofacker-Str. 9 71672
+                      Marbach am Neckar GERMANY
                     </p>
                   </li>
                 </ul>
@@ -75,8 +80,8 @@ const Footer = () => {
                       <LocationIcon />
                     </div>
                     <p className="ml-3 text-xs text-gray-light md:text-base">
-                      Ground Floor, Suite C-D, The Maltsters, Wetmore Road,
-                      Burton-on-trent, Staffordshire, DE14 1LS
+                      218 Bach Dang, ACB Building, Phuoc Ninh Ward, Hai Chau
+                      District, Danang City, Vietnam
                     </p>
                   </li>
                 </ul>

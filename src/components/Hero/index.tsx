@@ -40,8 +40,8 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              <div className="ml-10 mt-[-70px] flex items-center  md:w-1/2">
-                <div className="invisible md:visible">
+              <div className="mt-[50px] flex flex-col items-center  md:mt-[-70px]  md:w-1/2">
+                <div className="hidden md:block">
                   <Image
                     src="/images/hero/touch.png"
                     alt="hero-touch"
@@ -49,18 +49,18 @@ const Hero = () => {
                     height={0}
                     sizes="100vw"
                     style={{
-                      width: "100%",
+                      width: "80%",
                       height: "100%",
-                      minWidth: "420px",
+                      minWidth: "400px",
                     }}
                   />
                 </div>
-                <div className="absolute mt-[-70px] block md:hidden">
+                <div className="block pb-32 md:hidden">
                   <Image
                     src="/images/hero/touch.png"
                     alt="hero-touch"
-                    width={350}
-                    height={300}
+                    width={280}
+                    height={310}
                     sizes="100vw"
                   />
                 </div>

@@ -28,7 +28,7 @@ const AboutSectionTwo = () => {
             </div>
           </div>
           <div className="mt-0 w-full max-w-[860px] md:mt-12 lg:w-2/3">
-            <h3 className="flex flex-row flex-wrap justify-center text-[30px]  md:justify-start md:text-[50px]">
+            <h3 className="-mx-2 flex flex-row flex-wrap justify-center text-[28px] md:mx-0 md:justify-start md:text-[50px]">
               Looking to hire&nbsp;
               <p className="text-primary">top IT&nbsp;</p>
               engineers &#13;for&nbsp;
