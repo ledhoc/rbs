@@ -396,10 +396,10 @@ const featuresData: Feature[] = [
                   </p>
                   <br />
                   <p>
-                    With RB's team-building packages, you can ensure your
+                    {`With RB's team-building packages, you can ensure your
                     project is supported by a team of skilled professionals,
                     tailored to your specific needs, and equipped to handle any
-                    challenges that arise.
+                    challenges that arise.`}
                   </p>
                 </p>
               ),
@@ -561,9 +561,9 @@ const featuresData: Feature[] = [
           ]}
         />
         <p>
-          With RB's technical consulting, you can be confident that your project
+          {`With RB's technical consulting, you can be confident that your project
           will benefit from tailored solutions, expert support, and continuous
-          improvement to meet your evolving needs.
+          improvement to meet your evolving needs.`}
         </p>
       </>
     ),
@@ -656,9 +656,9 @@ const featuresData: Feature[] = [
           ]}
         />
         <p>
-          With RB's solving problems consulting, your IT company can maintain a
+          {`With RB's solving problems consulting, your IT company can maintain a
           stable, high-quality workforce, resolve conflicts efficiently, and
-          implement effective HR and operating strategies for sustained success.
+          implement effective HR and operating strategies for sustained success.`}
         </p>
       </>
     ),
