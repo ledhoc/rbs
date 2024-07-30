@@ -40,7 +40,7 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              <div className="relative flex items-center justify-center md:absolute md:bottom-[70px] md:right-0 md:w-1/2">
+              <div className="ml-10 mt-[-70px] flex items-center  md:w-1/2">
                 <div className="invisible md:visible">
                   <Image
                     src="/images/hero/touch.png"
@@ -49,13 +49,13 @@ const Hero = () => {
                     height={0}
                     sizes="100vw"
                     style={{
-                      width: "80%",
-                      minWidth: "600px",
-                      height: "auto",
+                      width: "100%",
+                      height: "100%",
+                      minWidth: "420px",
                     }}
                   />
                 </div>
-                <div className="visible absolute mt-[-70px] md:invisible">
+                <div className="absolute mt-[-70px] block md:hidden">
                   <Image
                     src="/images/hero/touch.png"
                     alt="hero-touch"

@@ -109,6 +109,7 @@ const Pricing = () => {
             subtitle=""
             selected={selectedIndex === 2}
             isTheBest
+            isPrimaryColor
           >
             <p className="mb-3 text-xs">
               Includes all services from the Standard Package, plus

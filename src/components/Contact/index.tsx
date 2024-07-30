@@ -2,10 +2,10 @@ import NewsLatterBox from "./NewsLatterBox";
 
 const Contact = () => {
   return (
-    <section id="contact" className="overflow-hidden  pb-16 pt-10">
+    <section id="contact" className="overflow-hidden pb-16 pt-10">
       <div className="container">
-        <div className="bg-red -mx-4 flex flex-wrap rounded-xl border-[1px] border-primary">
-          <div className="flex w-full px-4 xl:w-5/12">
+        <div className="bg-red -mx-0 flex flex-wrap rounded-xl border-[1px] md:-mx-4 md:border-primary">
+          <div className="flex w-full  xl:w-5/12">
             <NewsLatterBox />
           </div>
           <div className="w-full px-4 xl:w-7/12">

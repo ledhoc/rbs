@@ -25,7 +25,7 @@ const NewsLatterBox = () => {
   const { theme } = useTheme();
 
   return (
-    <div className="relative z-10  mb-5 flex  flex-1 flex-col  rounded-xl  p-10 pb-0 pr-0 ">
+    <div className="relative z-10  mb-5 flex  flex-1 flex-col  rounded-xl p-4  pb-0 pr-0 md:p-10 ">
       <h3 className="mb-4 text-2xl font-bold leading-tight text-gray-light">
         Contact Information
       </h3>
