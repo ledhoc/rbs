@@ -139,9 +139,22 @@ const ContactPage = () => {
                 />
               </div>
             </div>
-            <div className="my-9 flex flex-row">
-              <div className="invisible  flex w-0 md:visible md:w-[620px]">
-                <div className="flex flex-col">
+            <div className="mb-0 mt-9 flex flex-row md:mb-9">
+              <div className="invisible   w-0 md:visible md:w-auto">
+                <Image
+                  src="/images/whoweare/team-case.png"
+                  alt="team-case"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  objectFit={"cover"}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    minWidth: "400px",
+                  }}
+                />
+                {/* <div className="flex flex-col">
                   <CardVisit color={"bg-primary"} />
                   <div className="mt-5">
                     <CardVisit color="bg-[#EBF5FF]" />
@@ -152,19 +165,19 @@ const ContactPage = () => {
                   <div className="mt-5">
                     <CardVisit color={"bg-primary"} />
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="ml-2 flex flex-1 flex-col md:ml-10">
                 {data.map(({ id, position, description }) => {
                   return (
                     <div
                       key={`${id}-${position}`}
-                      className="mb-5 flex flex-col"
+                      className="mb-8 flex flex-col"
                     >
                       <p className="text-xl font-semibold text-primary">
                         {position}
                       </p>
-                      <p className="text-lg font-thin">{description}</p>
+                      <p className="mt-2 text-lg font-thin">{description}</p>
                     </div>
                   );
                 })}
@@ -172,12 +185,12 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-        <div className="my-20  flex flex-col items-center justify-center bg-[#FFFBFB]">
-          <p className="mx-8 mt-14 flex  text-center font-semibold md:text-[30px]">
+        <div className="my-5 flex flex-col items-center justify-center bg-[#FFFBFB] md:my-20">
+          <p className="mx-6 mt-14 flex text-center  text-[18px] font-semibold text-gray-light md:mx-8 md:text-[30px]">
             Our experts have been working alongside in-house teams for over a
             decade.
           </p>
-          <div className="container grid  w-full grid-cols-2 gap-x-2 py-16 md:grid-cols-4 md:gap-x-8">
+          <div className="container grid  w-full grid-cols-2 gap-x-2 py-8 md:grid-cols-4 md:gap-x-8 md:py-16">
             {teamData.map((item, index) => (
               <div
                 key={`${index}`}

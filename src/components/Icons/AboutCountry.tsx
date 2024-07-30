@@ -1,9 +1,9 @@
 import * as React from "react";
 const AboutCountry = (props) => (
   <svg
-    width="120"
-    height="95"
-    viewBox="0 0 120 95"
+    width={props.width || "120"}
+    height={props.height || "95"}
+    viewBox={`0 0 ${props.width || "120"} ${props.height || "95"}`}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
