@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import menuData from "./menuData";
 import Logo from "../Logo";
 
@@ -12,6 +12,26 @@ const Header = () => {
   const navbarToggleHandler = () => {
     setNavbarOpen(!navbarOpen);
   };
+
+  const buttonRef = useRef(null);
+  const menuRef = useRef(null);
+
+  const handleOutsideClick = (event) => {
+    if (
+      menuRef.current &&
+      !menuRef.current.contains(event.target) &&
+      !buttonRef.current.contains(event.target)
+    ) {
+      setNavbarOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
 
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
@@ -62,6 +82,7 @@ const Header = () => {
             <div className="ml-16 flex w-full px-4">
               <div>
                 <button
+                  ref={buttonRef}
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
                   aria-label="Mobile Menu"
@@ -85,6 +106,7 @@ const Header = () => {
                 </button>
                 <nav
                   id="navbarCollapse"
+                  ref={menuRef}
                   className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
