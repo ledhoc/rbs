@@ -140,17 +140,16 @@ const ContactPage = () => {
               </div>
             </div>
             <div className="mb-0 mt-9 flex flex-row md:mb-9">
-              <div className="invisible   w-0 md:visible md:w-auto">
+              <div className="invisible  w-0 md:visible md:w-auto">
                 <Image
                   src="/images/whoweare/team-case.png"
                   alt="team-case"
                   width={0}
                   height={0}
                   sizes="100vw"
-                  objectFit={"cover"}
+                  objectFit={"contain"}
                   style={{
                     width: "100%",
-                    height: "100%",
                     minWidth: "400px",
                   }}
                 />
