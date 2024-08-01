@@ -1,8 +1,62 @@
+"use client";
+
+import { useForm } from "react-hook-form";
+import SpringModal from "@/components/SpringModal";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 import NewsLatterBox from "./NewsLatterBox";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import LoadingModal from "@/components/Loading";
+
+const schema = yup
+  .object({
+    firstName: yup.string().required(),
+    lastName: yup.string().required(),
+    messages: yup.string().required(),
+    email: yup
+      .string()
+      .email("Email chưa đúng định dạng")
+      .required("Vui lòng nhập email"),
+  })
+  .required();
 
 const Contact = () => {
+  const router = useRouter();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
+  const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setLoading] = useState(false);
+
+  const onSubmit = (data) => {
+    setLoading(true);
+    setTimeout(() => {
+      reset();
+      setLoading(false);
+      setIsOpen(true);
+    }, 2000);
+  };
+  const onCancelModal = () => {
+    setIsOpen(false);
+  };
+  const onNextAction = () => {
+    router.push("/");
+  };
   return (
     <section id="contact" className="overflow-hidden pb-16 pt-10">
+      <LoadingModal isOpen={isLoading} setIsOpen={setLoading} />
+      <SpringModal
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        onCancel={onCancelModal}
+        onNextAction={onNextAction}
+      />
       <div className="container">
         <div className="bg-red -mx-0 flex flex-wrap rounded-xl border-[1px] md:-mx-4 md:border-primary">
           <div className="flex w-full  xl:w-5/12">
@@ -14,7 +68,7 @@ const Contact = () => {
               data-wow-delay=".15s
               "
             >
-              <form>
+              <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="-mx-4 mt-5 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -26,6 +80,7 @@ const Contact = () => {
                       </label>
                       <input
                         type="text"
+                        {...register("firstName")}
                         placeholder="Enter your first name"
                         className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
@@ -41,6 +96,7 @@ const Contact = () => {
                       </label>
                       <input
                         type="text"
+                        {...register("lastName")}
                         placeholder="Enter your last name"
                         className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
@@ -56,6 +112,7 @@ const Contact = () => {
                       </label>
                       <input
                         type="email"
+                        {...register("email")}
                         placeholder="Enter your email"
                         className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
@@ -64,13 +121,14 @@ const Contact = () => {
                   <div className="mx-4 w-full">
                     <div className="mb-8">
                       <label
-                        htmlFor="message"
+                        htmlFor="messages"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
                         Your Message
                       </label>
                       <textarea
-                        name="message"
+                        name="messages"
+                        {...register("messages")}
                         rows={6}
                         placeholder="Enter your Message"
                         className="border-stroke flex w-full flex-1 resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
