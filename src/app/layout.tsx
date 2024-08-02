@@ -9,7 +9,7 @@ import "../styles/index.css";
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "700"],
+  weight: ["200", "300", "400", "600", "500", "700"],
 });
 
 // const montserrat = Montserrat({

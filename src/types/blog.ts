@@ -13,3 +13,11 @@ export type Blog = {
   tags: string[];
   publishDate: string;
 };
+
+export type BlogSituation = {
+  rowOneValue: string;
+  rowOneTitle: string;
+  rowTwoInfo: string;
+  rowThreeTitle: string;
+  rowThreeSubTitle: string;
+};
