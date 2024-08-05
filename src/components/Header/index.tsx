@@ -26,6 +26,10 @@ const Header = () => {
     }
   };
 
+  const hideNavbar = () => {
+    setNavbarOpen(false);
+  };
+
   useEffect(() => {
     document.addEventListener("mousedown", handleOutsideClick);
     return () => {
@@ -119,6 +123,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
+                            onClick={hideNavbar}
                             className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
                                 ? "font-semibold text-primary dark:text-white"
