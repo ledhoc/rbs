@@ -48,7 +48,9 @@ const Hero = ({
                   </div>
                 </div>
               </div>
-              <div className="mt-[50px] flex flex-col items-center  md:mt-[-70px]  md:w-1/2">
+              <div
+                className={`mt-[50px] flex flex-col items-center  ${image ? "md:mt-[-20px]" : "md:mt-[-50px]"}  md:w-1/2`}
+              >
                 <div className="hidden md:block">
                   <Image
                     src={image || "/images/hero/touch.png"}
