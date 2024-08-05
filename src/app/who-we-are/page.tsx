@@ -130,7 +130,7 @@ const ContactPage = () => {
                   pride ourselves on our diverse and talented team, including:
                 </p>
               </div>
-              <div className="flex w-full justify-center text-center md:ml-0 md:w-1/2">
+              <div className="mt-10 flex w-full justify-center text-center md:ml-0  md:w-1/2">
                 <Image
                   src={"/images/whoweare/positions.png"}
                   width={500}
