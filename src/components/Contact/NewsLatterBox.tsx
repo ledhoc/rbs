@@ -7,8 +7,8 @@ import PhoneIcon from "@/components/Contact/Icons/Phone";
 import { useTheme } from "next-themes";
 
 const contactData = [
-  { id: 1, icon: <PhoneIcon />, text: "0906789098" },
-  { id: 2, icon: <EmailIcon />, text: "SupportRed#@gmail.com" },
+  // { id: 1, icon: <PhoneIcon />, text: "0906789098" },
+  { id: 2, icon: <EmailIcon />, text: "support@redbreed.tech" },
   {
     id: 3,
     icon: <LocationIcon />,

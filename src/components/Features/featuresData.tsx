@@ -267,6 +267,9 @@ const featuresData: Feature[] = [
           {
             text: "RB offers comprehensive team-building packages designed to meet your specific project needs. Our packages provide tailored solutions to help you assemble and maintain a highly skilled IT team.",
           },
+          {
+            text: "Our developers deliver comprehensive solutions, ensuring efficient project management, risk mitigation, deadline adherence, and seamless team coordination.",
+          },
         ]}
       />
     ),
@@ -287,7 +290,7 @@ const featuresData: Feature[] = [
             {
               title: (
                 <p>
-                  A. Basic Package <br />
+                  Basic Package <br />
                 </p>
               ),
               text: (
@@ -320,7 +323,7 @@ const featuresData: Feature[] = [
             {
               title: (
                 <p>
-                  B. Standard Package <br />
+                  Standard Package <br />
                 </p>
               ),
               text: (
@@ -350,7 +353,7 @@ const featuresData: Feature[] = [
             {
               title: (
                 <p>
-                  C. Premium Package
+                  Premium Package
                   <br />
                 </p>
               ),
@@ -374,7 +377,7 @@ const featuresData: Feature[] = [
             {
               title: (
                 <p>
-                  D. Full Service
+                  Full Service
                   <br />
                 </p>
               ),

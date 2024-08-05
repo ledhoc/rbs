@@ -5,7 +5,7 @@ import Image from "next/image";
 const BlogSectionOne = () => {
   return (
     <>
-      <section id="features" className="pb-[100px]">
+      <section id="features" className="mt-0 pb-[100px] md:mt-16">
         <div className="container">
           <SectionTitle title="How to build team" paragraph="" center />
           <div className="flex flex-wrap">

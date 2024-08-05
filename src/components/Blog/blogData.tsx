@@ -34,8 +34,13 @@ export const BlogSectionOneData = [
         </defs>
       </svg>
     ),
-    subTitle:
-      "Consult solution & technology suitable to each of project Verify requiements for quality and quantity of team according to business plan of client.",
+    subTitle: (
+      <p>
+        Consult solution & technology suitable to each of project <br />
+        Verify requiements for quality and quantity of team according to
+        business plan of client.
+      </p>
+    ),
   },
   {
     id: 2,
@@ -163,8 +168,15 @@ export const BlogSectionOneData = [
         />
       </svg>
     ),
-    subTitle:
-      "Operation and company rules Consult labor law Support to solve personal conflicts.",
+    subTitle: (
+      <p>
+        Operation and company rules.
+        <br />
+        Consult labor law. <br />
+        Support to solve personal conflicts.
+        <br />
+      </p>
+    ),
   },
 ];
 

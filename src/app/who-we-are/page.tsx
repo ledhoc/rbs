@@ -68,7 +68,7 @@ const data = [
     id: 8,
     position: "Developer",
     description:
-      "Our consultants provide expert advice and solutions across various industries, helping businesses optimize their operations and implement effective IT strategies.",
+      "Our developers deliver comprehensive solutions, ensuring efficient project management, risk mitigation, deadline adherence, and seamless team coordination.",
   },
 ];
 
@@ -130,9 +130,9 @@ const ContactPage = () => {
                   pride ourselves on our diverse and talented team, including:
                 </p>
               </div>
-              <div className="ml-3 flex w-3/4 justify-center text-center md:ml-0 md:w-1/2">
+              <div className="flex w-full justify-center text-center md:ml-0 md:w-1/2">
                 <Image
-                  src={"/svgs/who-we-are.svg"}
+                  src={"/images/whoweare/positions.png"}
                   width={500}
                   height={500}
                   alt={"who-we-are"}
@@ -193,7 +193,7 @@ const ContactPage = () => {
             {teamData.map((item, index) => (
               <div
                 key={`${index}`}
-                className="mb-7 mr-2 flex aspect-square flex-col items-center justify-center rounded-full border-[1px] border-primary bg-white text-gray-light md:mb-auto"
+                className="mb-7 mr-2 flex aspect-square flex-col items-center justify-center rounded-full border-[1px] border-dashed border-primary bg-white text-gray-light md:mb-auto"
               >
                 {item.icon}
                 <p className="font-bold md:text-[64px]">{item.title}</p>

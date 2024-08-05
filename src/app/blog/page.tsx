@@ -7,8 +7,8 @@ import Hero from "@/components/Hero";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Red Breed",
-  description: "This is Home Page for Red Breed",
+  title: "Blog",
+  description: "This is Blog Page for Red Breed",
   // other metadata
 };
 
@@ -16,14 +16,19 @@ export default function Home() {
   return (
     <>
       <ScrollUp />
-      <Hero />
+      <Hero
+        title="Technology makes life"
+        subtitle="easier and safer"
+        content="Red Breed Technology: Revolutionizing businesses with cutting-edge technology solutions"
+        image="/images/blog/hero.png"
+      />
       <BlogSectionOne />
-      <div className="hidden md:block">
+      {/* <div className="hidden md:block">
         <BlogSectionTwo />
-      </div>
-      <div className="block md:hidden">
+      </div> */}
+      {/* <div className="block md:hidden">
         <SwipeCarousel />
-      </div>
+      </div> */}
       <BlogSectionThree />
     </>
   );

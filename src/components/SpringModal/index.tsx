@@ -23,12 +23,12 @@ const SpringModal = ({ isOpen, setIsOpen, onCancel, onNextAction }) => {
               <div className="mx-auto mb-2 grid h-16 w-16 place-items-center rounded-full bg-white text-3xl text-indigo-600">
                 <SuccessIcon />
               </div>
-              <h3 className="text-green mb-2 text-center text-3xl font-bold">
+              <h3 className="mb-2 text-center text-3xl font-bold text-green">
                 Success
               </h3>
               <p className="mb-6 text-center text-gray-light">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                aperiam vitae, sapiente ducimus eveniet in velit.
+                Thanks for being awesome! First of all, thank you for contacting
+                us.
               </p>
               <div className="flex gap-2">
                 <button

@@ -5,7 +5,17 @@ import ArrowCurve from "public/svgs/arrow-curve.svg";
 import ArrowRight from "public/svgs/arrow_right.svg";
 import ContactButton from "@/components/Button/ContactButton";
 
-const Hero = () => {
+const Hero = ({
+  title,
+  subtitle,
+  content,
+  image,
+}: {
+  title?: string;
+  subtitle?: string;
+  content?: string;
+  image?: string;
+}) => {
   return (
     <>
       <section
@@ -17,16 +27,14 @@ const Hero = () => {
             <div className="flex w-full flex-col px-4 md:flex-row">
               <div className="flex flex-col  items-center md:w-1/2 md:items-start">
                 <h1 className="text-3xl font-bold leading-tight text-gray-light sm:text-4xl sm:leading-tight md:text-6xl md:leading-tight">
-                  Build & Run your
+                  {title || "Build & Run your"}
                 </h1>
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-primary sm:text-4xl sm:leading-tight md:text-6xl md:leading-tight">
-                  IT Dream Team
+                  {subtitle || "IT Dream Team"}
                 </h1>
                 <p className="max-w-[550px] text-justify text-gray-light">
-                  Our comprehensive solution provides you with everything you
-                  need to build your dream IT team, from identifying your
-                  specific staffing needs to recruiting, assessing, training,
-                  and retaining top talent.
+                  {content ||
+                    "Our comprehensive solution provides you with everything you need to build your dream IT team, from identifying your specific staffing needs to recruiting, assessing, training, and retaining top talent."}
                 </p>
                 <div className="mt-[50px]">
                   <ContactButton />
@@ -43,24 +51,24 @@ const Hero = () => {
               <div className="mt-[50px] flex flex-col items-center  md:mt-[-70px]  md:w-1/2">
                 <div className="hidden md:block">
                   <Image
-                    src="/images/hero/touch.png"
+                    src={image || "/images/hero/touch.png"}
                     alt="hero-touch"
                     width={0}
                     height={0}
                     sizes="100vw"
                     style={{
                       width: "80%",
-                      height: "100%",
+                      height: image ? "auto" : "100%",
                       minWidth: "400px",
                     }}
                   />
                 </div>
                 <div className="block pb-32 md:hidden">
                   <Image
-                    src="/images/hero/touch.png"
+                    src={image || "/images/hero/touch.png"}
                     alt="hero-touch"
-                    width={280}
-                    height={310}
+                    width={image ? 320 : 280}
+                    height={image ? 174 : 310}
                     sizes="100vw"
                   />
                 </div>
