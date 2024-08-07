@@ -102,7 +102,7 @@ const featuresData: Feature[] = [
           },
           {
             title: "Recruitment Services: ",
-            text: "RB offers end-to-end recruitment services to ensure you find the best candidates for your IT needs.",
+            text: "RB can develop, manage, and support projects from concept to product release, tailored to the client's budget and requirements.",
           },
         ]}
       />
@@ -127,31 +127,6 @@ const featuresData: Feature[] = [
                 Vietnamese and international developers. This ensures that we
                 can consistently provide top-quality IT professionals to meet
                 the specific requirements of your projects.
-              </p>
-            ),
-          },
-          {
-            title: "Recruitment Services: ",
-            text: (
-              <p>
-                RB offers end-to-end recruitment services to ensure you find the
-                best candidates for your IT needs. Our process includes:
-                <br />
-                - Recruitment: We actively search for and attract top IT talent
-                to meet your specific job requirements. <br />
-                - CV Collection: We collect and curate CVs based on your job
-                postings and customer requirements, ensuring a perfect match for
-                your projects. <br />
-                - Interview Coordination: We set up interview schedules and
-                manage the entire process, allowing you to focus on selecting
-                the right candidates. <br />
-                - Onboarding Support: We assist with the onboarding procedure,
-                including explaining company policies, benefits, and welfare. We
-                ensure a smooth transition for new hires by providing feedback
-                and support throughout the onboarding process. <br />
-                With RB, you can be confident that your recruitment needs will
-                be handled efficiently and professionally, ensuring you get the
-                best talent for your team.
               </p>
             ),
           },
@@ -611,10 +586,10 @@ const featuresData: Feature[] = [
       <ListTextItems
         list={[
           {
-            text: "Solution to support IT personnel at IT companies are stable both of quatity and quality",
+            text: "RB offers specialized consulting services to address and resolve various challenges within your IT company. Our problem-solving expertise ensures your IT personnel remain stable in both quantity and quality, and that internal conflicts are effectively managed",
           },
           {
-            text: "Problem solving for conflict about working culture, benefit, welfare, labor contract (from internal arrangement to law firms)",
+            text: "RB offers PMO services that include risk management consulting, process development to ensure project deadlines, maintenance of project standards, and coordination to keep the team aligned with project goals.",
           },
         ]}
       />
