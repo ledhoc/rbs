@@ -80,8 +80,8 @@ const Footer = () => {
                       <LocationIcon />
                     </div>
                     <p className="ml-3 text-xs text-gray-light md:text-base">
-                      218 Bach Dang, ACB Building, Phuoc Ninh Ward, Hai Chau
-                      District, Danang City, Vietnam
+                      Red Breed Technology Ltd. 218 Bach Dang, ACB Building,
+                      Phuoc Ninh Ward, Hai Chau District, Danang City, Vietnam
                     </p>
                   </li>
                 </ul>

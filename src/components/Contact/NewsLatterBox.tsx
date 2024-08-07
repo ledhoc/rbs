@@ -17,7 +17,7 @@ const contactData = [
   {
     id: 4,
     icon: <LocationIcon />,
-    text: "218 Bach Dang, ACB Building, Phuoc Ninh Ward, Hai Chau District, Danang City, Vietnam",
+    text: "Red Breed Technology Ltd. 218 Bach Dang, ACB Building, Phuoc Ninh Ward, Hai Chau District, Danang City, Vietnam",
   },
 ];
 
