@@ -5,12 +5,12 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Service Page | Red Breed",
-  description: "This is Service Page for Red Breed",
+  title: "Jobs Page | Red Breed",
+  description: "This is Jobs Page for Red Breed",
   // other metadata
 };
 
-const ServicePage = () => {
+const JobsPage = () => {
   return (
     <>
       <section className="relative z-10 overflow-hidden bg-white pt-28 lg:pt-[150px]">
@@ -38,4 +38,4 @@ const ServicePage = () => {
   );
 };
 
-export default ServicePage;
+export default JobsPage;
