@@ -243,7 +243,7 @@ const featuresData: Feature[] = [
             text: "RB offers comprehensive team-building packages designed to meet your specific project needs. Our packages provide tailored solutions to help you assemble and maintain a highly skilled IT team.",
           },
           {
-            text: "Our developers deliver comprehensive solutions, ensuring efficient project management, risk mitigation, deadline adherence, and seamless team coordination.",
+            text: "RB can develop, manage, and support projects from concept to product release, tailored to the client's budget and requirements.",
           },
         ]}
       />
