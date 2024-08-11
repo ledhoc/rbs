@@ -18,7 +18,7 @@ export default function Home() {
       <ScrollUp />
       <Hero
         title="Technology makes life"
-        subtitle="easier and safer"
+        subtitle="Easier and safer"
         content="Red Breed Technology: Revolutionizing businesses with cutting-edge technology solutions"
         image="/images/blog/hero.png"
       />

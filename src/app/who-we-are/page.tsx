@@ -101,24 +101,6 @@ const ContactPage = () => {
       <section className="relative z-10 overflow-hidden pt-28">
         <div className="container">
           <div className="flex flex-col">
-            <div className="invisible flex h-0 md:visible md:h-auto">
-              <div className="text-end">
-                <ul className="flex items-center md:justify-end">
-                  <li className="flex items-center">
-                    <Link
-                      href="/"
-                      className="pr-1 text-base font-medium text-gray-light hover:text-primary"
-                    >
-                      Home
-                    </Link>
-                    <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
-                  </li>
-                  <li className="text-base font-medium text-primary">
-                    {"Who We Are"}
-                  </li>
-                </ul>
-              </div>
-            </div>
             <div className="flex flex-col md:flex-row">
               <div className="flex w-full flex-col justify-center  md:w-1/2">
                 <h1 className="text-center text-3xl font-bold text-primary md:text-left md:text-6xl">
