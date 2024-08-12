@@ -7,12 +7,16 @@ import ContactButton from "@/components/Button/ContactButton";
 
 const Hero = ({
   title,
+  titleClass,
   subtitle,
+  subtitleClass,
   content,
   image,
 }: {
+  titleClass?: string;
   title?: string;
   subtitle?: string;
+  subtitleClass?: string;
   content?: string;
   image?: string;
 }) => {
@@ -26,13 +30,17 @@ const Hero = ({
           <div className="-mx-4 flex">
             <div className="flex w-full flex-col px-4 md:flex-row">
               <div className="flex flex-col  items-center md:w-1/2 md:items-start">
-                <h1 className="text-3xl font-bold leading-tight text-gray-light sm:text-4xl sm:leading-tight md:text-6xl md:leading-tight">
+                <h1
+                  className={`font-bold leading-tight text-gray-light  md:leading-tight ${titleClass ? titleClass : "text-3xl sm:text-4xl sm:leading-tight md:text-6xl"}`}
+                >
                   {title || "Build & Run your"}
                 </h1>
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-primary sm:text-4xl sm:leading-tight md:text-6xl md:leading-tight">
+                <h1
+                  className={`mb-5  font-bold leading-tight text-primary  sm:leading-tight  md:leading-tight ${subtitleClass ? subtitleClass : "text-3xl sm:text-4xl  sm:leading-tight md:text-6xl md:leading-tight"}`}
+                >
                   {subtitle || "IT Dream Team"}
                 </h1>
-                <p className="max-w-[550px] text-justify text-gray-light">
+                <p className="mr-6 flex max-w-[550px] text-justify text-gray-light">
                   {content ||
                     "Our comprehensive solution provides you with everything you need to build your dream IT team, from identifying your specific staffing needs to recruiting, assessing, training, and retaining top talent."}
                 </p>
@@ -49,7 +57,7 @@ const Hero = ({
                 </div>
               </div>
               <div
-                className={`mt-[50px] flex flex-col items-center  ${image ? "md:mt-[-20px]" : "md:mt-[-50px]"}  md:w-1/2`}
+                className={`mt-[50px] flex flex-col items-center  ${image ? "xl:mt-[-30px] 2xl:mt-[-70px]" : "justify-center md:mt-[-50px]"}  overflow-clip md:w-1/2`}
               >
                 <div className="hidden md:block">
                   <Image
@@ -59,9 +67,9 @@ const Hero = ({
                     height={0}
                     sizes="100vw"
                     style={{
-                      width: "80%",
+                      width: "100%",
                       height: image ? "auto" : "100%",
-                      minWidth: "400px",
+                      minWidth: "500px",
                     }}
                   />
                 </div>
@@ -69,8 +77,8 @@ const Hero = ({
                   <Image
                     src={image || "/images/hero/touch.png"}
                     alt="hero-touch"
-                    width={image ? 320 : 280}
-                    height={image ? 174 : 310}
+                    width={image ? 320 : 320}
+                    height={image ? 174 : 280}
                     sizes="100vw"
                   />
                 </div>
@@ -80,6 +88,34 @@ const Hero = ({
         </div>
         <div className="absolute right-0 top-[50px] z-[-1] opacity-30 lg:opacity-100">
           <HeroBackground />
+        </div>
+        <div className="absolute left-0 top-[50px] z-[-1] hidden md:block">
+          <svg
+            width="126"
+            height="126"
+            viewBox="0 0 126 126"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              r="126"
+              fill="url(#paint0_linear_791_5923)"
+              fill-opacity="0.18"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_791_5923"
+                x1="-54.4983"
+                y1="-51.8824"
+                x2="39.6747"
+                y2="100.713"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#FF3131" />
+                <stop offset="1" stop-color="#FFC3C3" />
+              </linearGradient>
+            </defs>
+          </svg>
         </div>
       </section>
     </>
