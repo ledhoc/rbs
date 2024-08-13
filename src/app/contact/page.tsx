@@ -3,6 +3,7 @@ import Contact from "@/components/Contact";
 
 import { Metadata } from "next";
 import Link from "next/link";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Contact Page | Red Breed",
@@ -30,7 +31,9 @@ const ContactPage = () => {
         </div>
       </section>
 
-      <Contact />
+      <Suspense>
+        <Contact />
+      </Suspense>
     </>
   );
 };

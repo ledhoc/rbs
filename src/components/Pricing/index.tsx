@@ -39,6 +39,7 @@ const Pricing = () => {
           <PricingBox
             onClickBox={() => setIndex(0)}
             packageName="Basic"
+            packageId="basic"
             price={isMonthly ? "40" : "120"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle=""
@@ -75,6 +76,7 @@ const Pricing = () => {
           <PricingBox
             onClickBox={() => setIndex(1)}
             packageName="Standard"
+            packageId="standard"
             price={isMonthly ? "399" : "789"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle=""
@@ -104,6 +106,7 @@ const Pricing = () => {
           <PricingBox
             onClickBox={() => setIndex(2)}
             packageName="Premium"
+            packageId="premium"
             price={isMonthly ? "589" : "999"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle=""
@@ -129,6 +132,7 @@ const Pricing = () => {
           <PricingBox
             onClickBox={() => setIndex(3)}
             packageName="Full Service"
+            packageId="full_service"
             price={isMonthly ? "589" : "999"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle=""

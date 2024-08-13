@@ -3,17 +3,21 @@
 import { useForm } from "react-hook-form";
 import SpringModal from "@/components/SpringModal";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { useSearchParams } from "next/navigation";
 import * as yup from "yup";
 import NewsLatterBox from "./NewsLatterBox";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import LoadingModal from "@/components/Loading";
+import { createContactApi } from "@/services/firebase";
+import SelectTags from "@/components/SelectTags";
 
 const schema = yup
   .object({
     firstName: yup.string().required(),
     lastName: yup.string().required(),
     messages: yup.string().required(),
+    package: yup.string().required(),
     email: yup
       .string()
       .email("Email chưa đúng định dạng")
@@ -23,24 +27,44 @@ const schema = yup
 
 const Contact = () => {
   const router = useRouter();
+  const searchParams = useSearchParams();
+
+  // eslint-disable-next-line no-use-before-define
   const {
     register,
     handleSubmit,
     reset,
+    setValue,
+    watch,
+    getFieldState,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
+    values: {},
   });
+
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setLoading] = useState(false);
 
+  useEffect(() => {
+    setValue("package", searchParams.get("package") || "premium");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const onSubmit = (data) => {
-    setLoading(true);
-    setTimeout(() => {
-      reset();
+    try {
+      setLoading(true);
+      const request = { ...data };
+      const response = createContactApi(request);
+      if (response) {
+        setTimeout(() => {
+          reset();
+          setLoading(false);
+          setIsOpen(true);
+        }, 1000);
+      }
+    } catch (error) {
       setLoading(false);
-      setIsOpen(true);
-    }, 2000);
+    }
   };
   const onCancelModal = () => {
     setIsOpen(false);
@@ -48,6 +72,12 @@ const Contact = () => {
   const onNextAction = () => {
     router.push("/");
   };
+
+  const onSelectTag = (id: string) => {
+    console.log("id", id);
+    setValue("package", id);
+  };
+
   return (
     <section id="contact" className="overflow-hidden pb-16 pt-10">
       <LoadingModal isOpen={isLoading} setIsOpen={setLoading} />
@@ -115,6 +145,26 @@ const Contact = () => {
                         {...register("email")}
                         placeholder="Enter your email"
                         className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                      />
+                    </div>
+                  </div>
+                  <div className="w-full px-4 ">
+                    <div className="mb-8">
+                      <label
+                        htmlFor="email"
+                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                      >
+                        Choose a Package
+                      </label>
+                      <SelectTags
+                        selectedId={watch("package")}
+                        list={[
+                          { id: "basic", title: "Basic" },
+                          { id: "standard", title: "Standard" },
+                          { id: "premium", title: "Premium" },
+                          { id: "full_service", title: "Full Service" },
+                        ]}
+                        onClick={onSelectTag}
                       />
                     </div>
                   </div>
