@@ -25,6 +25,13 @@ const schema = yup
   })
   .required();
 
+const packages = [
+  { id: "basic", title: "Basic" },
+  { id: "standard", title: "Standard" },
+  { id: "premium", title: "Premium" },
+  { id: "full_service", title: "Full Service" },
+];
+
 const Contact = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -47,7 +54,14 @@ const Contact = () => {
   const [isLoading, setLoading] = useState(false);
 
   useEffect(() => {
-    setValue("package", searchParams.get("package") || "premium");
+    const fIndex = packages.findIndex(
+      (p) => p["id"] === searchParams.get("package"),
+    );
+    if (fIndex > -1) {
+      setValue("package", searchParams.get("package") || "premium");
+    } else {
+      setValue("package", "premium");
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const onSubmit = (data) => {
@@ -158,12 +172,7 @@ const Contact = () => {
                       </label>
                       <SelectTags
                         selectedId={watch("package")}
-                        list={[
-                          { id: "basic", title: "Basic" },
-                          { id: "standard", title: "Standard" },
-                          { id: "premium", title: "Premium" },
-                          { id: "full_service", title: "Full Service" },
-                        ]}
+                        list={packages}
                         onClick={onSelectTag}
                       />
                     </div>

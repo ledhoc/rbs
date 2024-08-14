@@ -17,9 +17,9 @@ export default function SelectTags({ list = [], selectedId, onClick }: Props) {
     onClick(id);
   };
   return (
-    <div className="flex w-full">
+    <div className="flex w-full flex-wrap">
       {list.map((tag) => (
-        <div key={tag.id} className={` mr-4 flex flex-row`}>
+        <div key={tag.id} className={` mr-4 mt-4 flex flex-row`}>
           <Button
             id={tag.id}
             colorClass={
