@@ -9,6 +9,7 @@ import AboutCountry from "@/components/Icons/AboutCountry";
 import AboutPeople from "@/components/Icons/AboutPeople";
 import AboutLocation from "@/components/Icons/AboutLocation";
 import AboutClient from "@/components/Icons/AboutClient";
+import Profile from "@/components/Profile";
 
 export const metadata: Metadata = {
   title: "Who we are | Red Breed",
@@ -95,7 +96,7 @@ const teamData = [
   },
 ];
 
-const ContactPage = () => {
+const WhoWeAre = () => {
   return (
     <>
       <section className="relative z-10 overflow-hidden pt-28">
@@ -112,14 +113,7 @@ const ContactPage = () => {
                   pride ourselves on our diverse and talented team, including:
                 </p>
               </div>
-              <div className="mt-10 flex w-full justify-center text-center md:ml-0  md:w-1/2">
-                <Image
-                  src={"/images/whoweare/positions.png"}
-                  width={500}
-                  height={500}
-                  alt={"who-we-are"}
-                />
-              </div>
+              <Profile />
             </div>
             <div className="mb-0 mt-9 flex flex-row md:mb-9">
               <div className="invisible  w-0 md:visible md:w-auto">
@@ -135,18 +129,6 @@ const ContactPage = () => {
                     minWidth: "400px",
                   }}
                 />
-                {/* <div className="flex flex-col">
-                  <CardVisit color={"bg-primary"} />
-                  <div className="mt-5">
-                    <CardVisit color="bg-[#EBF5FF]" />
-                  </div>
-                </div>
-                <div className="ml-5 mt-20 flex flex-col">
-                  <CardVisit color="bg-[#EBF5FF]" />
-                  <div className="mt-5">
-                    <CardVisit color={"bg-primary"} />
-                  </div>
-                </div> */}
               </div>
               <div className="ml-2 flex flex-1 flex-col md:ml-10">
                 {data.map(({ id, position, description }) => {
@@ -189,4 +171,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default WhoWeAre;
