@@ -34,7 +34,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex w-2/5  flex-col md:ml-0  md:mt-10 md:w-1/5 md:pl-10">
-              <h2 className="mb-2 ml-4 mt-7 text-sm text-gray-light md:mb-8 md:ml-0 md:text-xl md:font-bold">
+              <h2 className="mb-2 ml-4 mt-0 text-sm text-gray-light md:mb-8 md:ml-0 md:text-xl md:font-bold">
                 Quick links
               </h2>
               <div className="mt-2 flex min-w-[140px] flex-col md:mt-0">

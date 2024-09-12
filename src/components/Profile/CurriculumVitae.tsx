@@ -15,35 +15,75 @@ export default function CurriculumVitae({ profile }) {
 
   const dotLine = (isDot?: boolean) => {
     if (isDot) {
-      return <Dot color={"#D3D3D3"} />;
+      return (
+        <svg
+          width="10"
+          height="10"
+          viewBox="0 0 10 10"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="5" cy="5" r="5" fill="#D3D3D3" />
+        </svg>
+      );
     }
     return (
       <svg
-        width="9"
-        height="58"
-        viewBox="0 0 9 58"
+        width="10"
+        height="88"
+        viewBox="0 0 10 88"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <circle cx="4.5" cy="4" r="4" fill="#D3D3D3" />
-        <rect x="3.5" y="10.75" width="2" height="47" fill="#D3D3D3" />
+        <circle cx="5" cy="5" r="5" fill="#D3D3D3" />
+        <rect x="4" y="13" width="2" height="75" fill="#D3D3D3" />
       </svg>
     );
   };
 
   const timeline = () => {
-    return (
-      <div className="flex flex-row">
-        <div>{dotLine()}</div>
-        <div>
-          
+    return profile?.timelines?.map((x, xIndex) => {
+      return (
+        <div
+          key={`${x.id}`}
+          className={`mt-5 pt-5 ${xIndex === 0 ? "" : "border-t-[1px]"}`}
+        >
+          {x.map((y, index) => (
+            <div key={`${y.id}`} className="flex flex-row">
+              <div className="mt-1.5">
+                {index === x.length - 1 ? dotLine(true) : dotLine()}
+              </div>
+              <div className="ml-3 flex flex-col">
+                <p className="text-xl font-semibold text-black">{y.company}</p>
+                <p className="mt-2 text-sm  text-black">{y.position}</p>
+                <p className="mt-2 text-sm  text-black">{y.fromTo}</p>
+              </div>
+            </div>
+          ))}
         </div>
-      </div>
-    );
+      );
+    });
+  };
+
+  const education = () => {
+    return profile?.education?.map((x, index) => {
+      return (
+        <div key={`${x.id}`} className="flex flex-row">
+          <div className="mt-1.5">
+            {profile?.education?.length === 1 ? dotLine(true) : dotLine()}
+          </div>
+          <div className="ml-3 flex flex-col">
+            <p className="text-xl font-semibold text-black">{x.university}</p>
+            <p className="mt-2 text-sm  text-black">{x.department}</p>
+            <p className="mt-2 text-sm  text-black">{x.years}</p>
+          </div>
+        </div>
+      );
+    });
   };
 
   return (
-    <div className="relative z-10 overflow-visible">
+    <div className="relative z-10 mb-5 overflow-visible">
       <div>
         <div className="mt-[-75px] flex justify-center">
           <Image
@@ -58,7 +98,7 @@ export default function CurriculumVitae({ profile }) {
         {profile?.name}
       </h3>
       <p className="text-center text-sm text-black">{profile?.position}</p>
-      <div className="max-h-[380px] overflow-scroll px-10">
+      <div className="max-h-[400px] overflow-scroll px-4 md:px-10">
         <div className="mt-5 rounded-2xl border-[1px] border-[#F0F0F0] p-3">
           {section("ABOUT")}
           <p className="mb-2 text-sm text-gray-light">{profile?.about}</p>
@@ -66,6 +106,10 @@ export default function CurriculumVitae({ profile }) {
         <div className="mt-5 rounded-2xl border-[1px] border-[#F0F0F0] p-3">
           {section("Experience")}
           {timeline()}
+        </div>
+        <div className="mt-5 rounded-2xl border-[1px] border-[#F0F0F0] p-3">
+          {section("Education")}
+          {education()}
         </div>
       </div>
     </div>

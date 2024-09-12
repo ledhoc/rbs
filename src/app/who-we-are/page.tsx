@@ -99,7 +99,7 @@ const teamData = [
 const WhoWeAre = () => {
   return (
     <>
-      <section className="relative z-10 overflow-hidden pt-28">
+      <section className="relative overflow-hidden pt-28">
         <div className="container">
           <div className="flex flex-col">
             <div className="flex flex-col md:flex-row">
