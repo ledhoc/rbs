@@ -35,13 +35,13 @@ const PricingBox = (props: {
           className={`flex h-[86px] flex-col justify-center px-4 ${selected ? "bg-primary" : "bg-[#FDF6F6]"}`}
         >
           <h4
-            className={`mb-2 text-center text-xl font-bold  ${selected ? "text-white" : "text-dark"}`}
+            className={`mb-2 text-center text-lg font-bold  ${selected ? "text-white" : "text-dark"}`}
           >
             {packageName}
           </h4>
           {isTheBest ? (
             <div
-              className={`absolute right-0 top-0 flex h-[33px] items-center overflow-hidden rounded-bl-2xl ${selected ? "bg-white" : "bg-primary"} px-3`}
+              className={`absolute right-0 top-0 flex h-[28px] items-center overflow-hidden rounded-bl-2xl ${selected ? "bg-white" : "bg-primary"} px-3`}
             >
               <p
                 className={`text-center text-xs font-semibold ${selected ? "text-primary" : "text-white"} `}

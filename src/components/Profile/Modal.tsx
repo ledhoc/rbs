@@ -13,7 +13,7 @@ const ProfileModal = ({ isOpen, setIsOpen, data }) => {
           className="fixed inset-0 z-[9999] grid cursor-pointer place-items-center overflow-y-scroll bg-slate-900/20 p-8 backdrop-blur"
         >
           <motion.div
-            initial={{ scale: 0, rotate: "12.5deg" }}
+            initial={{ scale: 0, rotate: "0deg" }}
             animate={{ scale: 1, rotate: "0deg" }}
             exit={{ scale: 0, rotate: "0deg" }}
             onClick={(e) => e.stopPropagation()}

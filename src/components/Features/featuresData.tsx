@@ -2,13 +2,17 @@ import { Feature } from "@/types/feature";
 import Dot from "../Icons/Dot";
 import { text } from "stream/consumers";
 
-export const TextItem = ({ text, title }) => {
+export const TextItem = ({ text, title, isDot = true }) => {
   return (
     <div className="mt-5 flex">
-      <div className="mt-2">
-        <Dot />
-      </div>
-      <div className="ml-3 text-gray-light">
+      {isDot && (
+        <div className="mt-2">
+          <Dot />
+        </div>
+      )}
+      <div
+        className={`${isDot ? "ml-3 " : "ml-0"} text-justify text-gray-light`}
+      >
         <span className="font-semibold">{title}</span>
         <span>{text}</span>
       </div>
@@ -16,9 +20,9 @@ export const TextItem = ({ text, title }) => {
   );
 };
 
-const ListTextItems = ({ list }) => {
+const ListTextItems = ({ list, isDot = true }) => {
   return list.map(({ text, title }, index) => (
-    <TextItem key={`${index}`} {...{ text, title }} />
+    <TextItem key={`${index}`} {...{ text, title, isDot }} />
   ));
 };
 
@@ -92,17 +96,14 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "Hiring",
+    title: "Hiring Made Simple",
     paragraph: (
       <ListTextItems
+        isDot={false}
         list={[
           {
-            title: "Supply CV: ",
-            text: "RB specializes in providing comprehensive staffing solutions tailored to your IT needs.",
-          },
-          {
-            title: "Recruitment Services: ",
-            text: "RB can develop, manage, and support projects from concept to product release, tailored to the client's budget and requirements.",
+            title: "",
+            text: "We help find the right IT people to fit your needs. We handle your project from start to finish, making sure it stays on budget and meets your goals.",
           },
         ]}
       />
@@ -235,15 +236,13 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "Build a Team",
+    title: "Build Your IT Team",
     paragraph: (
       <ListTextItems
+        isDot={false}
         list={[
           {
-            text: "RB offers comprehensive team-building packages designed to meet your specific project needs. Our packages provide tailored solutions to help you assemble and maintain a highly skilled IT team.",
-          },
-          {
-            text: "RB can develop, manage, and support projects from concept to product release, tailored to the client's budget and requirements.",
+            text: "We deliver customised team-building solutions to meet your project needs, managing everything from concept to product launch within your budget and requirements.",
           },
         ]}
       />
@@ -493,15 +492,13 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "Technical consulting",
+    title: "Technical Consulting",
     paragraph: (
       <ListTextItems
+        isDot={false}
         list={[
           {
-            text: "Technical solutions match requirements of each of project",
-          },
-          {
-            text: "Support in resolving technical issues during deploy of the project (incurred technical issues, changes in development solutions due to changes in business plans)",
+            text: "We provide the right tech solutions for your project and help fix any problems that pop up, even if your plans change along the way.",
           },
         ]}
       />
@@ -581,15 +578,13 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "Solving problems consulting",
+    title: "Problem-Solving Consulting",
     paragraph: (
       <ListTextItems
+        isDot={false}
         list={[
           {
-            text: "RB offers specialized consulting services to address and resolve various challenges within your IT company. Our problem-solving expertise ensures your IT personnel remain stable in both quantity and quality, and that internal conflicts are effectively managed",
-          },
-          {
-            text: "RB offers PMO services that include risk management consulting, process development to ensure project deadlines, maintenance of project standards, and coordination to keep the team aligned with project goals.",
+            text: "We provide expert consulting to tackle IT challenges, ensuring team stability and conflict management. Our PMO services cover risk management, process optimization, deadline adherence, and project alignment.",
           },
         ]}
       />

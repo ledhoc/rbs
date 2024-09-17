@@ -20,16 +20,16 @@ const schema = yup
     package: yup.string().required(),
     email: yup
       .string()
-      .email("Email chưa đúng định dạng")
-      .required("Vui lòng nhập email"),
+      .email("Email is invalid")
+      .required("Please input your email"),
   })
   .required();
 
 const packages = [
-  { id: "basic", title: "Basic" },
-  { id: "standard", title: "Standard" },
+  { id: "free", title: "Free" },
+  { id: "starter", title: "Starter" },
+  { id: "growth", title: "Growth" },
   { id: "premium", title: "Premium" },
-  { id: "full_service", title: "Full Service" },
 ];
 
 const Contact = () => {

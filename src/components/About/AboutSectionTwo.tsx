@@ -29,10 +29,9 @@ const AboutSectionTwo = () => {
           </div>
           <div className="mt-0 w-full max-w-[860px] md:mt-12 lg:w-2/3">
             <h3 className="-mx-2 flex flex-row flex-wrap justify-center text-[28px] md:mx-0 md:justify-start md:text-[50px]">
-              Looking to hire&nbsp;
-              <p className="text-primary">top IT&nbsp;</p>
-              engineers &#13;for&nbsp;
-              <p className="text-primary">your project</p>?
+              Need&nbsp;
+              <p className="text-primary">Top IT</p>
+              -Engineers?
             </h3>
             <div
               className="max-w-[500px visible relative flex aspect-[25/24] h-auto md:invisible md:h-0 lg:m-0"
@@ -46,6 +45,11 @@ const AboutSectionTwo = () => {
               />
             </div>
             <div className="mt-[-50px] flex flex-col md:mt-3">
+              <p className="pb-2 text-gray-light">
+                Build your IT team, get expert tech solutions, and optimize
+                processes to save time and costs. RB delivers tailored
+                consulting to meet your needs.
+              </p>
               {list.map((text, index) => (
                 <ListItem key={`${index}`} text={text} />
               ))}

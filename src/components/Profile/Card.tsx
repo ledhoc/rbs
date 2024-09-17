@@ -13,6 +13,9 @@ const Card = ({ srcImage, alt, onClick, title, subTitle, data }) => {
         </div>
         <p className="mt-5 text-xl text-primary">{title}</p>
         <p className="text-sm">{subTitle}</p>
+        <button className="text-sm italic text-primary underline">
+          View Profile
+        </button>
       </div>
     </>
   );

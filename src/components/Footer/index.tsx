@@ -24,11 +24,11 @@ const Footer = () => {
                     </div>
                   </Link>
                   <p className="mb-2 mt-7 text-xs font-semibold md:text-base">
-                    Start a conversation with one of our specialist consultants
+                    Connect with Our Specialists
                   </p>
                   <p className="mb-9 text-[10.5px] leading-relaxed text-gray-light md:text-base">
-                    Send a brief overview of your requirements and we will
-                    contact you to find out more about your needs.
+                    Send us your requirements, and we’ll reach out to discuss
+                    your needs.
                   </p>
                 </div>
               </div>
@@ -58,7 +58,7 @@ const Footer = () => {
                 ))}
               </div>
             </div>
-            <div className="w-full px-4 md:mt-10 md:w-2/5">
+            <div className="w-full px-4 md:mt-10 md:w-2/5 md:px-0">
               <div className="mb-2 md:mb-5 lg:mb-16">
                 <h2 className="mb-8 text-xl font-bold text-gray-light">
                   Our Offices
@@ -69,8 +69,8 @@ const Footer = () => {
                       <LocationIcon />
                     </div>
                     <p className="ml-3 text-xs text-gray-light md:text-base">
-                      Red Breed Technology Ltd. Ludwig-Hofacker-Str. 9 71672
-                      Marbach am Neckar GERMANY
+                      Red Breed Technology Ltd., Ludwig-Hofacker-Str. 9, 71672
+                      Marbach, Germany
                     </p>
                   </li>
                 </ul>
@@ -80,8 +80,8 @@ const Footer = () => {
                       <LocationIcon />
                     </div>
                     <p className="ml-3 text-xs text-gray-light md:text-base">
-                      Red Breed Technology Ltd. 218 Bach Dang, ACB Building,
-                      Phuoc Ninh Ward, Hai Chau District, Danang City, Vietnam
+                      Red Breed Technology Ltd., 218 Bach Dang, ACB Building, Da
+                      Nang, Vietnam
                     </p>
                   </li>
                 </ul>

@@ -3,8 +3,16 @@ const profiles = {
     avatar: "/images/whoweare/avatar-ceo.png",
     name: "Tan Tran",
     position: "CEO/Cofounder",
-    about:
-      "As an expert on building teams, I am passionate about matching the strong teams of IT engineers with different requirements of each of project. At Red Breed Tech, I can realize my passion and enthusiasm to support customers who have demands to build great projects on developers with high level - high skills. Save efforts of customers and achieve highest efficiency of projects are my working style. Tan Tran",
+    about: (
+      <p>
+        {`❛ As an expert on Build-Run teams, I am passionate about matching the strong teams of IT engineers with different requirements of each of project. At Red Breed Tech, I can realize my passion and enthusiasm to support customers who have demands to build great projects on developers with high level - high skills. Save efforts of customers and achieve highest efficiency of projects are my target.`}
+        <br />
+        <span className="text-primary">
+          {"Tan Tran"}
+          <span className="text-gray-light">{` ❜`}</span>
+        </span>
+      </p>
+    ),
     timelines: [
       [
         {
@@ -38,12 +46,6 @@ const profiles = {
           company: "Hybrid company Da Nang branch",
           position: "Hiring, Build teams, Soft skills training",
           fromTo: "Jan 2018 ~ Oct 2018",
-        },
-        {
-          id: 3,
-          company: "Hybrid company Da Nang branch",
-          position: "Director",
-          fromTo: "Apr 2021 ~ Aug 2023",
         },
       ],
       [
@@ -93,9 +95,20 @@ const profiles = {
   director: {
     avatar: "/images/whoweare/avatar-director.png",
     name: "Michael Nguyen",
-    position: "Director/Founder",
-    about:
-      "Michael is the Founder of Red Breed Tech, a dynamic entrepreneur who relocated to Vietnam in 2015. Passionate about the opportunities Vietnam offers, Michael thrives on managing and creating innovative businesses, driving growth and success in the region.",
+    position: "General Director/Founder",
+    about: (
+      <p>
+        {`❛ Michael is the Founder of Red Breed Tech, a dynamic entrepreneur who
+        relocated to Vietnam in 2015. Passionate about the opportunities Vietnam
+        offers, Michael thrives on managing and creating innovative businesses,
+        driving growth and success in the region.`}
+        <br />
+        <span className="text-primary">
+          {"Michael Nguyen"}
+          <span className="text-gray-light">{` ❜`}</span>
+        </span>
+      </p>
+    ),
     timelines: [
       [
         {
@@ -141,7 +154,7 @@ const profiles = {
     position: "COO/Founder",
     about: (
       <p>
-        {` Hello, I'm Duyen - Business operations consultant. I have founded Red
+        {`❛  Hello, I'm Duyen - Business operations consultant. I have founded Red
         Breed Technology in Danang, Vietnam with my two Partners. I am COO Since
         2007, I started going through different positions at back-office
         departments in different fields.`}
@@ -158,6 +171,11 @@ const profiles = {
         operational process and problem solving effectively.`}{" "}
         <br />
         {`Feel free to contact me!`}
+        <br />
+        <span className="text-primary">
+          {"Duyen Vo"}
+          <span className="text-gray-light">{` ❜`}</span>
+        </span>
       </p>
     ),
     timelines: [
@@ -183,6 +201,12 @@ const profiles = {
         },
       ],
       [
+        {
+          id: 0,
+          company: "HRI Institute",
+          position: "Chief Investment consultant",
+          fromTo: "Mar 2010 - Jul 2017",
+        },
         {
           id: 1,
           company: "DNK Trading & Services company",

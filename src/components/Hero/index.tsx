@@ -31,18 +31,18 @@ const Hero = ({
             <div className="flex w-full flex-col px-4 md:flex-row">
               <div className="flex flex-col  items-center md:w-1/2 md:items-start">
                 <h1
-                  className={`font-bold leading-tight text-gray-light  md:leading-tight ${titleClass ? titleClass : "text-3xl sm:text-4xl sm:leading-tight md:text-6xl"}`}
+                  className={`font-bold leading-tight text-gray-light  md:leading-tight ${titleClass ? titleClass : "text-3xl sm:text-4xl sm:leading-tight md:text-4xl xl:text-5xl "}`}
                 >
-                  {title || "Build & Run your"}
+                  {title || "Build & Power your"}
                 </h1>
                 <h1
-                  className={`mb-5  font-bold leading-tight text-primary  sm:leading-tight  md:leading-tight ${subtitleClass ? subtitleClass : "text-3xl sm:text-4xl  sm:leading-tight md:text-6xl md:leading-tight"}`}
+                  className={`mb-5  font-bold leading-tight text-primary  sm:leading-tight  md:leading-tight ${subtitleClass ? subtitleClass : "text-3xl sm:text-4xl  sm:leading-tight md:text-5xl md:leading-tight"}`}
                 >
-                  {subtitle || "IT Dream Team"}
+                  {subtitle || "Elite IT-Team"}
                 </h1>
-                <p className="mr-6 flex max-w-[550px] text-justify text-gray-light">
+                <p className="mr-6 flex max-w-[550px] text-center text-gray-light md:text-left">
                   {content ||
-                    "Our comprehensive solution provides you with everything you need to build your dream IT team, from identifying your specific staffing needs to recruiting, assessing, training, and retaining top talent."}
+                    "We provide solutions for recruiting, assessing, training and retaining top tech talent, tailored to your project’s needs."}
                 </p>
                 <div className="mt-[50px]">
                   <ContactButton />

@@ -54,8 +54,8 @@ export default function CurriculumVitae({ profile }) {
                 {index === x.length - 1 ? dotLine(true) : dotLine()}
               </div>
               <div className="ml-3 flex flex-col">
-                <p className="text-xl font-semibold text-black">{y.company}</p>
-                <p className="mt-2 text-sm  text-black">{y.position}</p>
+                <p className="text-xl font-semibold text-black">{y.position}</p>
+                <p className="mt-2 text-sm  text-black">{y.company}</p>
                 <p className="mt-2 text-sm  text-black">{y.fromTo}</p>
               </div>
             </div>

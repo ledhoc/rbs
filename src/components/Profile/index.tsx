@@ -33,7 +33,7 @@ const Profile = () => {
             srcImage={"/images/whoweare/avatar-director.png"}
             alt={"avatar-director"}
             title={"Michael Nguyen"}
-            subTitle={"Director/Founder"}
+            subTitle={"General Director/Founder"}
             onClick={onClickCard}
           />
           <Card
