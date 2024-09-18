@@ -154,7 +154,7 @@ const profiles = {
       {
         id: 1,
         university: "Hochschule für Wirtschaft und Umwelt",
-        department: "Information Technology, Bachelor",
+        department: "Economics, Bachelor",
         years: "2007-2010",
         description:
           "Michael earned his Bachelor’s degree in Information Technology, laying the foundation for his expertise in tech-driven business solutions and strategic management.",
