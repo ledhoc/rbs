@@ -57,6 +57,13 @@ export default function CurriculumVitae({ profile }) {
                 <p className="text-xl font-semibold text-black">{y.position}</p>
                 <p className="mt-2 text-sm  text-black">{y.company}</p>
                 <p className="mt-2 text-sm  text-black">{y.fromTo}</p>
+                <>
+                  {y.description && (
+                    <p className="my-2 text-sm  text-black">
+                      ❛ {y.description} ❜
+                    </p>
+                  )}
+                </>
               </div>
             </div>
           ))}
@@ -76,6 +83,11 @@ export default function CurriculumVitae({ profile }) {
             <p className="text-xl font-semibold text-black">{x.university}</p>
             <p className="mt-2 text-sm  text-black">{x.department}</p>
             <p className="mt-2 text-sm  text-black">{x.years}</p>
+            <>
+              {x.description && (
+                <p className="my-2 text-sm  text-black">❛ {x.description} ❜</p>
+              )}
+            </>
           </div>
         </div>
       );
