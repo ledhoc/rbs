@@ -47,12 +47,6 @@ const profiles = {
           position: "Hiring, Build teams, Soft skills training Manager",
           fromTo: "Jan 2018 - Oct 2018",
         },
-        {
-          id: 23,
-          company: "Hybrid company Da Nang branch",
-          position: "Hiring, Build teams, Soft skills training",
-          fromTo: "Jan 2018 - Oct 2018",
-        },
       ],
       [
         {
@@ -69,7 +63,7 @@ const profiles = {
         },
         {
           id: 33,
-          company: "At projects in e-commer, HR, ERP",
+          company: "Projects in e-commer, HR, ERP",
           position: "Project manager",
           fromTo: "Sep 2011 - Dec 2014",
         },
@@ -104,7 +98,7 @@ const profiles = {
     position: "General Director/Founder",
     about: (
       <p>
-        {`❛ Michael is the Founder and CEO of Red Breed Tech, a visionary entrepreneur who has been pioneering technological innovation since relocating to Vietnam in 2015. With a deep passion for the transformative potential of the region, Michael excels in steering and building cutting-edge businesses, relentlessly driving growth and spearheading success across the tech landscape.`}
+        {`❛ Michael is the Founder and General Director of Red Breed Tech, a visionary entrepreneur who has been pioneering technological innovation since relocating to Vietnam in 2015. With a deep passion for the transformative potential of the region, Michael excels in steering and building cutting-edge businesses, relentlessly driving growth and spearheading success across the tech landscape.`}
         <br />
         <span className="text-primary">
           {"Michael"}
@@ -120,7 +114,7 @@ const profiles = {
           position: "Founder/General Director",
           fromTo: "2023 - Present",
           description:
-            "As the Founder and CEO of Red Breed Tech, Michael leads the charge in technological innovation, harnessing cutting-edge strategies and pioneering solutions to drive growth and market leadership.",
+            "As the Founder and General Director of Red Breed Tech, Michael leads the charge in technological innovation, harnessing cutting-edge strategies and pioneering solutions to drive growth and market leadership.",
         },
         {
           id: 12,

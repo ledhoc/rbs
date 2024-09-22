@@ -12,7 +12,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Red Breed",
-  description: "This is Home Page for Red Breed",
+  icons: { icon: "/favicon.ico" },
+  description:
+    "Leading IT consulting and talent solutions for business success",
   // other metadata
 };
 

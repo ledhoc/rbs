@@ -13,7 +13,9 @@ import Profile from "@/components/Profile";
 
 export const metadata: Metadata = {
   title: "Who we are | Red Breed",
-  description: "This is Who We Are Page for Red Breed",
+  icons: { icon: "/favicon.ico" },
+  description:
+    "Leading IT consulting and talent solutions for business success",
   // other metadata
 };
 const data = [
@@ -103,14 +105,30 @@ const WhoWeAre = () => {
         <div className="container">
           <div className="flex flex-col">
             <div className="flex flex-col md:flex-row">
-              <div className="flex w-full flex-col justify-center  md:w-1/2">
-                <h1 className="text-center text-3xl font-bold text-primary md:text-left md:text-6xl">
-                  Our Team
+              <div className="flex w-full flex-col md:mt-20 md:w-1/2">
+                <h1 className="text-center text-2xl md:text-left md:text-3xl">
+                  Our Founding Story
                 </h1>
-                <p className="mt-3 text-justify text-base md:mt-7  md:text-xl">
-                  Our team comprises over 300 highly skilled professionals, each
-                  bringing unique expertise and experience to our projects. We
-                  pride ourselves on our diverse and talented team, including:
+                <p className="md:xs-7 mt-3 text-base font-thin sm:text-sm md:text-lg">
+                  Red Breed Tech was born from a shared vision between three
+                  tech enthusiasts—Michael, Duyen, and Tan—who saw an unmet need
+                  in their hometown of Da Nang. As seasoned professionals, they
+                  realized that startups and IT companies in the region were
+                  struggling to find specialized consulting services to drive
+                  their growth. Despite the booming tech scene, there was a gap
+                  in the market for tailored, expert guidance.
+                  <br />
+                  <br />
+                  <p>
+                    Driven by a passion for innovation and a deep understanding
+                    of the industry's challenges, the trio decided to close that
+                    gap. They founded Red Breed Tech with a simple yet powerful
+                    mission: to be the go-to consulting firm "from builders for
+                    builders." With their combined expertise and commitment to
+                    excellence, they quickly established Red Breed Tech as the
+                    premier IT consulting firm in the region, helping businesses
+                    thrive in the ever-evolving digital landscape.
+                  </p>
                 </p>
               </div>
               <Profile />
@@ -131,6 +149,17 @@ const WhoWeAre = () => {
                 />
               </div>
               <div className="ml-2 flex flex-1 flex-col md:ml-10">
+                <div className="mb-5 flex w-full flex-col">
+                  <h1 className="text-center text-4xl font-bold text-primary md:text-left md:text-5xl">
+                    Our Team
+                  </h1>
+                  <p className="md:xs-7 mt-3 text-base sm:text-sm md:text-lg">
+                    Our team comprises over 300 highly skilled professionals,
+                    each bringing unique expertise and experience to our
+                    projects. We pride ourselves on our diverse and talented
+                    team, including:
+                  </p>
+                </div>
                 {data.map(({ id, position, description }) => {
                   return (
                     <div
@@ -140,7 +169,9 @@ const WhoWeAre = () => {
                       <p className="text-xl font-semibold text-primary">
                         {position}
                       </p>
-                      <p className="mt-2 text-lg font-thin">{description}</p>
+                      <p className="mt-2 text-base font-thin md:text-lg">
+                        {description}
+                      </p>
                     </div>
                   );
                 })}

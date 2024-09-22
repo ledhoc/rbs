@@ -7,7 +7,9 @@ import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Contact Page | Red Breed",
-  description: "This is Contact Page for Red Breed",
+  icons: { icon: "/favicon.ico" },
+  description:
+    "Leading IT consulting and talent solutions for business success",
   // other metadata
 };
 

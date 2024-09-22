@@ -59,9 +59,7 @@ export default function CurriculumVitae({ profile }) {
                 <p className="mt-2 text-sm  text-black">{y.fromTo}</p>
                 <>
                   {y.description && (
-                    <p className="my-2 text-sm  text-black">
-                      ❛ {y.description} ❜
-                    </p>
+                    <p className="my-2 text-sm  text-black">{y.description}</p>
                   )}
                 </>
               </div>
@@ -85,7 +83,7 @@ export default function CurriculumVitae({ profile }) {
             <p className="mt-2 text-sm  text-black">{x.years}</p>
             <>
               {x.description && (
-                <p className="my-2 text-sm  text-black">❛ {x.description} ❜</p>
+                <p className="my-2 text-sm  text-black">{x.description}</p>
               )}
             </>
           </div>

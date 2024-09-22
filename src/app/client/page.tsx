@@ -3,8 +3,10 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Client",
-  description: "Our clients",
+  title: "Client | Red Breed",
+  icons: { icon: "/favicon.ico" },
+  description:
+    "Leading IT consulting and talent solutions for business success",
   // other metadata
 };
 
