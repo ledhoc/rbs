@@ -121,14 +121,14 @@ const WhoWeAre = () => {
                   <br />
                   <p>
                     Driven by a passion for innovation and a deep understanding
-                    of the industry`&apos;`s challenges, the trio decided to
-                    close that gap. They founded Red Breed Tech with a simple
-                    yet powerful mission: to be the go-to consulting firm
-                    `&quot;`from builders for builders.`&quot;` With their
-                    combined expertise and commitment to excellence, they
-                    quickly established Red Breed Tech as the premier IT
-                    consulting firm in the region, helping businesses thrive in
-                    the ever-evolving digital landscape.
+                    of the industry&apos;s challenges, the trio decided to close
+                    that gap. They founded Red Breed Tech with a simple yet
+                    powerful mission: to be the go-to consulting firm &quot;from
+                    builders for builders.&quot; With their combined expertise
+                    and commitment to excellence, they quickly established Red
+                    Breed Tech as the premier IT consulting firm in the region,
+                    helping businesses thrive in the ever-evolving digital
+                    landscape.
                   </p>
                 </p>
               </div>
