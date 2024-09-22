@@ -387,8 +387,8 @@ const featuresData: Feature[] = [
         <p className="mt-3">
           We provide tech consulting to make sure your projects run smoothly
           with the right solutions and support. Our services help you tackle
-          technical challenges and are customised to fit your needs. Here's what
-          we offer:
+          technical challenges and are customised to fit your needs. Here&apos;s
+          what we offer:
         </p>
         <ListTextItems
           list={[
@@ -463,7 +463,7 @@ const featuresData: Feature[] = [
         <p className="mr-3 mt-5">
           We help solve problems in your IT company to keep things running
           smoothly. Our services make sure your IT team stays strong and happy,
-          and we handle any conflicts that come up. Here's what we do:
+          and we handle any conflicts that come up. Here&apos;s what we do:
         </p>
         <ListTextItems
           list={[
