@@ -33,7 +33,7 @@ const Pricing = () => {
       <div className="container">
         <SectionTitle
           title="WHAT DO YOU NEED?"
-          paragraph="RB offers comprehensive team-building packages designed to meet your specific project needs. Our packages provide tailored solutions to help you assemble and maintain a highly skilled IT team. Choose from our four packages:"
+          paragraph="We provide specialised team-building solutions tailored to your unique project requirements. Our packages are designed to help you efficiently assemble and sustain a top-tier IT team. Select from four customizable packages to suit your needs."
           center
           width="980px"
           mb="40px"

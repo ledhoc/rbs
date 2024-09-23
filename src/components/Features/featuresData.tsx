@@ -476,12 +476,12 @@ const featuresData: Feature[] = [
               text: "We help sort out issues with work culture, benefits, and contracts, and can even provide legal advice if needed.",
             },
             {
-              title: "HR and Operating Strategy:",
+              title: "HR and Operating Strategy: ",
               text: "We advise on the best ways to manage your team and design training to improve skills.",
             },
           ]}
         />
-        <p>
+        <p className="mt-3">
           {`With our help, your IT company will have a stable, skilled team, handle conflicts easily, and use smart strategies for success.`}
         </p>
       </>

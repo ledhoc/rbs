@@ -21,57 +21,51 @@ export const metadata: Metadata = {
 const data = [
   {
     id: 0,
-    position: "Tech Leader",
-    description:
-      "Our tech leader oversees the technical direction of the company, ensuring that we stay at the forefront of technology trends and deliver innovative solutions to our clients.",
+    position: "Tech Leaders",
+    description: "Oversees tech direction and innovation.",
   },
   {
     id: 1,
     position: "Key Technologists",
     description:
-      "Our key tech experts specialize in various fields such as AI, machine learning, cloud computing, and cybersecurity, providing deep technical knowledge and cutting-edge solutions.",
+      "Experts in AI, machine learning, cloud computing, and cybersecurity.",
   },
   {
     id: 2,
-    position: "Chief Technology Officer (CTO)",
+    position: "CTO",
     description:
-      "The CTO guides our technological strategy and innovation, ensuring that we leverage the latest technologies to meet our clients' needs.",
+      "Drives tech strategy and ensures alignment with client needs.",
   },
   {
     id: 3,
     position: "Project Managers (PM)",
-    description:
-      "Our project managers ensure that all projects are delivered on time, within scope, and within budget. They coordinate teams, manage resources, and maintain constant communication with clients.",
+    description: "Ensure timely, on-budget project delivery.",
   },
   {
     id: 4,
     position: "Design Leads",
-    description:
-      "Our design leads create user-centric designs that enhance the user experience and ensure that our solutions are both functional and aesthetically pleasing.",
+    description: "Create functional and appealing user designs.",
   },
   {
     id: 5,
     position: "Business Analysts",
-    description:
-      "Our business analysts bridge the gap between technology and business, understanding client requirements and translating them into effective technical solutions.",
+    description: "Translate business needs into tech solutions.",
   },
   {
     id: 6,
     position: "Marketing Solutions Team",
-    description:
-      "Our marketing solutions experts help clients enhance their online presence and reach their target audience through innovative digital marketing strategies.",
+    description: "Enhances online presence with digital strategies.",
   },
   {
     id: 7,
     position: "Consultants",
-    description:
-      "Our consultants provide expert advice and solutions across various industries, helping businesses optimize their operations and implement effective IT strategies.",
+    description: " Offer expert advice for IT optimization.",
   },
   {
     id: 8,
-    position: "Developer",
+    position: "Developers",
     description:
-      "Our developers deliver comprehensive solutions, ensuring efficient project management, risk mitigation, deadline adherence, and seamless team coordination.",
+      "Build solutions with efficient project management and coordination.",
   },
 ];
 
@@ -106,7 +100,7 @@ const WhoWeAre = () => {
           <div className="flex flex-col">
             <div className="flex flex-col md:flex-row">
               <div className="flex w-full flex-col md:mt-20 md:w-1/2">
-                <h1 className="text-center text-2xl md:text-left md:text-3xl">
+                <h1 className="text-center text-4xl font-bold md:text-left md:text-5xl">
                   Our Founding Story
                 </h1>
                 <p className="md:xs-7 mt-3 text-base font-thin sm:text-sm md:text-lg">

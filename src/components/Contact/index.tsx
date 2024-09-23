@@ -196,7 +196,7 @@ const Contact = () => {
                   </div>
                   <div className="mb-7 mt-5 flex w-full flex-col-reverse px-4">
                     <button className="overflow-hidden rounded-xl bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
-                      Submit Ticket
+                      Send
                     </button>
                   </div>
                 </div>

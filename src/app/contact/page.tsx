@@ -25,7 +25,7 @@ const ContactPage = () => {
               </h1>
               <p className="text-center text-xl font-medium text-gray-light md:text-left">
                 {
-                  "Drop us a line through the form below and we'll get back to you"
+                  "Looking for a new job or need help hiring? Send us a message, and we’ll get started!"
                 }
               </p>
             </div>
