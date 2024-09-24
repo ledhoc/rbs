@@ -9,10 +9,14 @@ import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
-
+import ogImage from "../../public/images/hero/touch.png";
 export const metadata: Metadata = {
   title: "Red Breed",
-  icons: { icon: "/favicon.ico" },
+  openGraph: {
+    images: [
+      { url: ogImage.src, width: ogImage.width, height: ogImage.height },
+    ],
+  },
   description:
     "Leading IT consulting and talent solutions for business success",
   // other metadata

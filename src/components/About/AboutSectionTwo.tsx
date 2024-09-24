@@ -16,7 +16,7 @@ const AboutSectionTwo = () => {
         <div className="mt-[-65px] flex flex-col-reverse md:-mx-4 md:mt-12 md:flex-row">
           <div className="w-full px-4 lg:w-1/3">
             <div
-              className="invisible relative mx-auto mb-12 aspect-[25/24] h-0 max-w-[500px] text-center md:visible md:h-auto lg:m-0"
+              className="relative mx-auto mb-12 hidden aspect-[25/24] h-0 max-w-[500px] text-center md:block md:h-auto lg:m-0"
               data-wow-delay=".15s"
             >
               <Image
@@ -34,7 +34,7 @@ const AboutSectionTwo = () => {
               -Engineers?
             </h3>
             <div
-              className="max-w-[500px visible relative flex aspect-[25/24] h-auto md:invisible md:h-0 lg:m-0"
+              className="display relative mb-10  flex aspect-[25/24] h-[300px] w-full md:hidden"
               data-wow-delay=".15s"
             >
               <Image

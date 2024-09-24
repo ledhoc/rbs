@@ -103,7 +103,7 @@ const WhoWeAre = () => {
                 <h1 className="text-center text-4xl font-bold md:text-left md:text-5xl">
                   Our Founding Story
                 </h1>
-                <p className="md:xs-7 mt-3 text-base font-thin sm:text-sm md:text-lg">
+                <p className="md:xs-7 sd:text-sm mt-3 text-justify text-base font-thin md:text-lg">
                   Red Breed Tech was born from a shared vision between three
                   tech enthusiasts—Michael, Duyen, and Tan—who saw an unmet need
                   in their hometown of Da Nang. As seasoned professionals, they
@@ -113,7 +113,7 @@ const WhoWeAre = () => {
                   in the market for tailored, expert guidance.
                   <br />
                   <br />
-                  <p>
+                  <p className="text-justify text-base md:text-lg">
                     Driven by a passion for innovation and a deep understanding
                     of the industry&apos;s challenges, the trio decided to close
                     that gap. They founded Red Breed Tech with a simple yet

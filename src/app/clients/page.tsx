@@ -1,4 +1,4 @@
-import { clientData } from "@/components/Client/clientData";
+import { clientData } from "@/components/Clients/clientData";
 import { Metadata } from "next";
 import Image from "next/image";
 
