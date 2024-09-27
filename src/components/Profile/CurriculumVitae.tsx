@@ -110,9 +110,10 @@ export default function CurriculumVitae({ profile }) {
       <p className="text-center text-sm text-black">{profile?.position}</p>
       <div className="max-h-[400px] overflow-scroll px-4 md:px-10">
         <div className="mt-5 rounded-2xl border-[1px] border-[#F0F0F0] p-3">
-          {section("ABOUT")}
+          {/*section("ABOUT")*/}
           <p className="mb-2 text-sm text-gray-light">{profile?.about}</p>
         </div>
+        {/*
         <div className="mt-5 rounded-2xl border-[1px] border-[#F0F0F0] p-3">
           {section("Experience")}
           {timeline()}
@@ -121,6 +122,7 @@ export default function CurriculumVitae({ profile }) {
           {section("Education")}
           {education()}
         </div>
+        */}
       </div>
     </div>
   );

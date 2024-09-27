@@ -41,7 +41,7 @@ const SpringModal = ({ isOpen, setIsOpen, onCancel, onNextAction }) => {
                   onClick={onNextAction}
                   className="w-full rounded bg-white py-2 font-semibold text-indigo-600 transition-opacity hover:opacity-90"
                 >
-                  About Us
+                  Home
                 </button>
               </div>
             </div>
