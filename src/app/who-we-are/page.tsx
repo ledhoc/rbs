@@ -100,7 +100,7 @@ const WhoWeAre = () => {
           <div className="flex flex-col">
             <div className="flex flex-col md:flex-row">
               <div className="flex w-full flex-col md:mt-20 md:w-1/2">
-                <h1 className="text-center text-4xl font-bold md:text-left md:text-5xl">
+                <h1 className="text-center text-4xl font-bold text-primary md:text-left md:text-5xl">
                   Our Founding Story
                 </h1>
                 <p className="md:xs-7 sd:text-sm mt-3 text-justify text-base font-thin md:text-lg">

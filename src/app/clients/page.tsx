@@ -39,7 +39,7 @@ export default function Client() {
                       src={x.image}
                       alt={x.name}
                       width={342}
-                      height={200}
+                      height={180}
                     />
                   </div>
                 </div>

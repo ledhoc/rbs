@@ -2,9 +2,9 @@ import * as React from "react";
 
 const Logo = ({ width, height }: { width?: string; height?: string }) => (
   <svg
-    width="241"
-    height="54"
-    viewBox="0 0 241 54"
+    width={width || "295"}
+    height={height || "66"}
+    viewBox="0 0 295 66"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -65,7 +65,7 @@ const Logo = ({ width, height }: { width?: string; height?: string }) => (
     </g>
     <defs>
       <clipPath id="clip0_996_2608">
-        <rect width="240.869" height="54" fill="white" />
+        <rect width="295" height="66" fill="white" />
       </clipPath>
     </defs>
   </svg>

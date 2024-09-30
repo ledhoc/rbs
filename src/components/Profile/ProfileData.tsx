@@ -5,7 +5,7 @@ const profiles = {
     position: "CEO/Cofounder",
     about: (
       <p>
-        {`❛ As an expert on Build-Run teams, I am passionate about matching the strong teams of IT engineers with different requirements of each of project. At Red Breed Tech, I can realize my passion and enthusiasm to support customers who have demands to build great projects on developers with high level - high skills. Save efforts of customers and achieve highest efficiency of projects are my target.`}
+        {`❛ Tan is a leader in building and managing IT teams, with over 12 years of success delivering top talent for global and local investors. He excels at aligning skilled engineers with project needs and driving efficient, high-impact results. At Red Breed Tech, Tan ensures projects are expertly executed from start to finish, maximizing outcomes with minimal client effort.`}
         <br />
         <span className="text-primary">
           {"Tan Tran"}

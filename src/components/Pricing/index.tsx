@@ -184,6 +184,8 @@ const Pricing = () => {
                 "We’ll handle the day-to-day processes for your project, back office, and overall office operations"
               }
             />
+            <TextItem text={"Business Feasibility Analysis"} />
+            <TextItem text={"Market Release Support"} />
           </PricingBox>
         </div>
       </div>
