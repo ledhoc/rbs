@@ -121,7 +121,7 @@ const Pricing = () => {
               }
             />
             <p className="mt-3 text-sm font-semibold">
-              Team Commitment & Cohesion Consulting (ICC)
+              Team Commitment & Cohesion Consulting
             </p>
             <TextItem
               text={

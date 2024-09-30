@@ -5,12 +5,7 @@ const profiles = {
     position: "CEO/Cofounder",
     about: (
       <p>
-        {`❛ Tan is a leader in building and managing IT teams, with over 12 years of success delivering top talent for global and local investors. He excels at aligning skilled engineers with project needs and driving efficient, high-impact results. At Red Breed Tech, Tan ensures projects are expertly executed from start to finish, maximizing outcomes with minimal client effort.`}
-        <br />
-        <span className="text-primary">
-          {"Tan Tran"}
-          <span className="text-gray-light">{` ❜`}</span>
-        </span>
+        {`❛ Tan is a leader in building and managing IT teams, with over 12 years of success delivering top talent for global and local investors. He excels at aligning skilled engineers with project needs and driving efficient, high-impact results. At Red Breed Tech, Tan ensures projects are expertly executed from start to finish, maximizing outcomes with minimal client effort. ❜`}
       </p>
     ),
     // timelines: [
@@ -94,16 +89,11 @@ const profiles = {
   },
   director: {
     avatar: "/images/whoweare/avatar-director.png",
-    name: "Michael",
+    name: "Michael Nguyen",
     position: "General Director/Founder",
     about: (
       <p>
-        {`❛ Michael serves as the General Director of Red Breed Tech Consulting, where his primary focus is ensuring the organisation stays on course. As a long-time consultant, he has a deep understanding of clients' pain points when it comes to building IT teams. With a passion for Vietnam's transformative potential, Michael excels at leading and developing innovative businesses, driving growth, and championing success across the industry.`}
-        <br />
-        <span className="text-primary">
-          {"Michael"}
-          <span className="text-gray-light">{` ❜`}</span>
-        </span>
+        {`❛ Michael serves as the General Director of Red Breed Tech Consulting, where his primary focus is ensuring the organisation stays on course. As a long-time consultant, he has a deep understanding of clients' pain points when it comes to building IT teams. With a passion for Vietnam's transformative potential, Michael excels at leading and developing innovative businesses, driving growth, and championing success across the industry. ❜`}
       </p>
     ),
     // timelines: [
@@ -163,12 +153,7 @@ const profiles = {
       <p className="text-justify">
         {`❛  Duyen serves as a Business Operations Consultant and is the Founder of Red Breed Tech, located in Danang, Vietnam, alongside her two partners. With a background in Information Technology and Finance, she had the opportunity to assist various businesses across diverse sectors, including education, human resources, co-working spaces, architectural design, clubs, restaurants, hotels, and tourism services to keep projects was formed and moving forward.`}
         <br />
-        <p className="mt-3">{`With her extensive experience and expertise, Duyen and her team are well-equipped to consult and support IT investors in establishing robust teams, streamlining operational processes, and implementing effective management strategies, also problem solving smoothly, all aimed at facilitating seamless growth and success for your IT projects.`}</p>
-        <br />
-        <span className="text-primary">
-          {"Duyen Vo"}
-          <span className="text-gray-light">{` ❜`}</span>
-        </span>
+        <p className="mt-3">{`With her extensive experience and expertise, Duyen and her team are well-equipped to consult and support IT investors in establishing robust teams, streamlining operational processes, and implementing effective management strategies, also problem solving smoothly, all aimed at facilitating seamless growth and success for your IT projects. ❜`}</p>
       </p>
     ),
     // timelines: [
