@@ -5,7 +5,7 @@ const profiles = {
     position: "CEO/Cofounder",
     about: (
       <p>
-        {`❛ Tan is a leader in building and managing IT teams, with over 12 years of success delivering top talent for global and local investors. He excels at aligning skilled engineers with project needs and driving efficient, high-impact results. At Red Breed Tech, Tan ensures projects are expertly executed from start to finish, maximizing outcomes with minimal client effort. ❜`}
+        {`❛ Tan is a leader in building and managing IT teams, with over 12 years of success delivering top talent for global and local investors. He excels at aligning skilled engineers with project needs and driving efficient, high-impact results. At Red Breed Tech Consulting, Tan ensures projects are expertly executed from start to finish, maximizing outcomes with minimal client effort. ❜`}
       </p>
     ),
     // timelines: [
