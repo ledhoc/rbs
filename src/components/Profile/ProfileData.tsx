@@ -151,9 +151,9 @@ const profiles = {
     position: "COO/Founder",
     about: (
       <p className="text-justify">
-        {`❛  Duyen serves as a Business Operations Consultant and is the Founder of Red Breed Tech, located in Danang, Vietnam, alongside her two partners. With a background in Information Technology and Finance, she had the opportunity to assist various businesses across diverse sectors, including education, human resources, co-working spaces, architectural design, clubs, restaurants, hotels, and tourism services to keep projects was formed and moving forward.`}
+        {`❛  Duyen serves as a Business Operations Consultant and is the Founder of Red Breed Tech Consulting. With a background in Information Technology and Finance, she had the opportunity to assist various businesses across diverse sectors, including education, HR, co-working spaces, architectural design, clubs, restaurants, hotels, tourism services and IT to keep projects was formed and moving forward.`}
         <br />
-        <p className="mt-3">{`With her extensive experience and expertise, Duyen and her team are well-equipped to consult and support IT investors in establishing robust teams, streamlining operational processes, and implementing effective management strategies, also problem solving smoothly, all aimed at facilitating seamless growth and success for your IT projects. ❜`}</p>
+        <p className="mt-3">{`Based on her extensive experience and expertise, Duyen and her team are well-equipped to consult and support IT investors in establishing robust teams, streamlining operational processes, implementing effective management strategies, also problem solving smoothly, all aimed at facilitating seamless growth and success for your IT projects. ❜`}</p>
       </p>
     ),
     // timelines: [

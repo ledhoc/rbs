@@ -69,8 +69,8 @@ const Footer = () => {
                       <LocationIcon />
                     </div>
                     <p className="ml-3 text-xs text-gray-light md:text-base">
-                      Red Breed Technology Ltd., Ludwig-Hofacker-Str. 9, 71672
-                      Marbach, Germany
+                      Red Breed Ltd., Ludwig-Hofacker-Str. 9, 71672 Marbach,
+                      Germany
                     </p>
                   </li>
                 </ul>
@@ -80,8 +80,8 @@ const Footer = () => {
                       <LocationIcon />
                     </div>
                     <p className="ml-3 text-xs text-gray-light md:text-base">
-                      Red Breed Technology Ltd., 218 Bach Dang, ACB Building, Da
-                      Nang, Vietnam
+                      Red Breed Ltd., 218 Bach Dang, ACB Building, Da Nang,
+                      Vietnam
                     </p>
                   </li>
                 </ul>
@@ -92,7 +92,7 @@ const Footer = () => {
           <div className="h-px  bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-gray-light">
-              Copyright © 2024 Red Breed
+              Copyright © 2024 Red Breed Ltd
             </p>
           </div>
         </div>

@@ -32,7 +32,7 @@ const Profile = () => {
             data={profiles.director}
             srcImage={"/images/whoweare/avatar-director.png"}
             alt={"avatar-director"}
-            title={"Michael"}
+            title={"Michael Nguyen"}
             subTitle={"General Director/Founder"}
             onClick={onClickCard}
           />

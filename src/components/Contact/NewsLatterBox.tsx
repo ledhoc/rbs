@@ -12,12 +12,12 @@ const contactData = [
   {
     id: 3,
     icon: <LocationIcon />,
-    text: "Red Breed Technology Ltd. Ludwig-Hofacker-Str. 9  71672 Marbach am Neckar GERMANY",
+    text: "Red Breed Ltd. Ludwig-Hofacker-Str. 9  71672 Marbach am Neckar GERMANY",
   },
   {
     id: 4,
     icon: <LocationIcon />,
-    text: "Red Breed Technology Ltd. 218 Bach Dang, ACB Building, Phuoc Ninh Ward, Hai Chau District, Danang City, Vietnam",
+    text: "Red Breed Ltd. 218 Bach Dang, ACB Building, Phuoc Ninh Ward, Hai Chau District, Danang City, Vietnam",
   },
 ];
 
